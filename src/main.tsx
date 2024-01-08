@@ -3,13 +3,12 @@ import ReactDOM from 'react-dom';
 import App from './App.tsx';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-ReactDOM.render(
+ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <Router>
       <Routes>
     <Route path='/*' element={<App/>} />
     </Routes>
     </Router>
-  </React.StrictMode>,
-  document.getElementById('root')
+  </React.StrictMode>
 );

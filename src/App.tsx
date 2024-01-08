@@ -21,7 +21,7 @@ import React from "react";
         )
       },
       {
-        path: "//contact",
+        path: "/contact",
         element: (
           <Contact/>
         )
@@ -33,7 +33,7 @@ import React from "react";
         )
       },
       {
-        path: "//projects/:productId",
+        path: "/projects/:productId",
         element: (
           <ProductDetailsPage/>
         )
