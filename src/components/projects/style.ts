@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Reveal } from "../test";
+
 
 export const ProjectsBox = styled.div`
 

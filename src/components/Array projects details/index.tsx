@@ -90,19 +90,7 @@ interface ProductDetailsProps {
     PhotoCarrosel3: string;
     PhotoCarrosel4: string;
     PhotoCarrosel5: string;
-    PhotoCarrosel6: string;
-    PhotoCarrosel7: string;
-    PhotoCarrosel8: string;
-    PhotoCarrosel9: string;
-    PhotoCarroselClass1: string;
-    PhotoCarroselClass2: string;
-    PhotoCarroselClass3: string;
-    PhotoCarroselClass4: string;
-    PhotoCarroselClass5: string;
-    PhotoCarroselClass6: string;
-    PhotoCarroselClass7: string;
-    PhotoCarroselClass8: string;
-    PhotoCarroselClass9: string;
+    PhotoCarrosel6: string;     
     textcarrosel: string;
     totalSlide: number;
   };
@@ -141,18 +129,8 @@ export const product: ProductDetailsProps['product'][] =
       PhotoCarrosel4: gadgetsCa4,
       PhotoCarrosel5: gadgetsCa5,
       PhotoCarrosel6: gadgetsCa6,
-      PhotoCarrosel7: 'url-da-foto-7',
-      PhotoCarrosel8: 'url-da-foto-8',
-      PhotoCarrosel9: 'url-da-foto-9',
-      PhotoCarroselClass1: 'classphoto01',
-      PhotoCarroselClass2: 'classphoto02',
-      PhotoCarroselClass3: 'classphoto03',
-      PhotoCarroselClass4: 'classphoto04',
-      PhotoCarroselClass5: 'classphoto05',
-      PhotoCarroselClass6: 'classphoto06',
-      PhotoCarroselClass7: 'classphoto07',
-      PhotoCarroselClass8: 'classphoto08',
-      PhotoCarroselClass9: 'classphoto09',
+      
+      
       textcarrosel: 'O site também conta com painel de controle para o administrador verificar todos os produtos cadastrados, classes de produtos, usuários cadastrados, pedidos feitos. O painel foi desenvolvido para o usuário administrador realizar toda gestão do site sem precisar programar.',
       totalSlide: 5,
     },
@@ -184,18 +162,8 @@ export const product: ProductDetailsProps['product'][] =
       PhotoCarrosel4: 'url-da-foto-4',
       PhotoCarrosel5: 'url-da-foto-5',
       PhotoCarrosel6: 'url-da-foto-6',
-      PhotoCarrosel7: 'url-da-foto-7',
-      PhotoCarrosel8: 'url-da-foto-8',
-      PhotoCarrosel9: 'url-da-foto-9',
-      PhotoCarroselClass1: 'classphoto01',
-      PhotoCarroselClass2: 'classphoto02',
-      PhotoCarroselClass3: 'classphoto03',
-      PhotoCarroselClass4: 'classphoto04',
-      PhotoCarroselClass5: 'classphoto05',
-      PhotoCarroselClass6: 'classphoto06',
-      PhotoCarroselClass7: 'classphoto07',
-      PhotoCarroselClass8: 'classphoto08',
-      PhotoCarroselClass9: 'classphoto09',
+      
+      
       textcarrosel: 'Para ser elegível a uma das chaves da Riot Games que possibilita a consulta de dados das APIs em grande escala é necessário colocar camadas de proteção desta chave token de acesso. Para isso ser possível foi necessário criar um servidor intermediário no back end para receber as requisições do navegador e enviar para o servidor da Riot e retornar apenas os dados solicitados pelo usuário.',
       totalSlide: 3,
     },
@@ -224,18 +192,8 @@ export const product: ProductDetailsProps['product'][] =
       PhotoCarrosel4: 'url-da-foto-4',
       PhotoCarrosel5: 'url-da-foto-5',
       PhotoCarrosel6: 'url-da-foto-6',
-      PhotoCarrosel7: 'url-da-foto-7',
-      PhotoCarrosel8: 'url-da-foto-8',
-      PhotoCarrosel9: 'url-da-foto-9',
-      PhotoCarroselClass1: 'classphoto01',
-      PhotoCarroselClass2: 'classphoto02',
-      PhotoCarroselClass3: 'classphoto03',
-      PhotoCarroselClass4: 'classphoto04',
-      PhotoCarroselClass5: 'classphoto05',
-      PhotoCarroselClass6: 'classphoto06',
-      PhotoCarroselClass7: 'classphoto07',
-      PhotoCarroselClass8: 'classphoto08',
-      PhotoCarroselClass9: 'classphoto09',
+      
+      
       textcarrosel: 'O back end desse site foi fornecido pela Gama Academy durante meu curso de front end e infelizmente nao esta mais disponível; imposibilitando visualizar todas as propriedades do site.',
       totalSlide: 1,
     },
@@ -267,18 +225,8 @@ export const product: ProductDetailsProps['product'][] =
       PhotoCarrosel4: 'url-da-foto-4',
       PhotoCarrosel5: 'url-da-foto-5',
       PhotoCarrosel6: 'url-da-foto-6',
-      PhotoCarrosel7: 'url-da-foto-7',
-      PhotoCarrosel8: 'url-da-foto-8',
-      PhotoCarrosel9: 'url-da-foto-9',
-      PhotoCarroselClass1: 'classphoto01',
-      PhotoCarroselClass2: 'classphoto02',
-      PhotoCarroselClass3: 'classphoto03',
-      PhotoCarroselClass4: 'classphoto04',
-      PhotoCarroselClass5: 'classphoto05',
-      PhotoCarroselClass6: 'classphoto06',
-      PhotoCarroselClass7: 'classphoto07',
-      PhotoCarroselClass8: 'classphoto08',
-      PhotoCarroselClass9: 'classphoto09',
+      
+      
       textcarrosel: 'A session storage e o Redux foram combinados porque esse site foi imaginado para acessos recorrentes ao longo do dia. Dessa forma é possível o usuário continuar logado e voltar a página que estava lendo sem precisar relogar',
       totalSlide: 1,
     },
@@ -307,18 +255,8 @@ export const product: ProductDetailsProps['product'][] =
       PhotoCarrosel4: dindinCa4,
       PhotoCarrosel5: 'url-da-foto-5',
       PhotoCarrosel6: 'url-da-foto-6',
-      PhotoCarrosel7: 'url-da-foto-7',
-      PhotoCarrosel8: 'url-da-foto-8',
-      PhotoCarrosel9: 'url-da-foto-9',
-      PhotoCarroselClass1: 'classphoto01',
-      PhotoCarroselClass2: 'classphoto02',
-      PhotoCarroselClass3: 'classphoto03',
-      PhotoCarroselClass4: 'classphoto04',
-      PhotoCarroselClass5: 'classphoto05',
-      PhotoCarroselClass6: 'classphoto06',
-      PhotoCarroselClass7: 'classphoto07',
-      PhotoCarroselClass8: 'classphoto08',
-      PhotoCarroselClass9: 'classphoto09',
+      
+      
       textcarrosel: 'Que tal aprender sobre educação financeira?',
       totalSlide: 4,
     },
@@ -347,18 +285,8 @@ export const product: ProductDetailsProps['product'][] =
       PhotoCarrosel4: pompomCa4,
       PhotoCarrosel5: 'url-da-foto-5',
       PhotoCarrosel6: 'url-da-foto-6',
-      PhotoCarrosel7: 'url-da-foto-7',
-      PhotoCarrosel8: 'url-da-foto-8',
-      PhotoCarrosel9: 'url-da-foto-9',
-      PhotoCarroselClass1: 'classphoto01',
-      PhotoCarroselClass2: 'classphoto02',
-      PhotoCarroselClass3: 'classphoto03',
-      PhotoCarroselClass4: 'classphoto04',
-      PhotoCarroselClass5: 'classphoto05',
-      PhotoCarroselClass6: 'classphoto06',
-      PhotoCarroselClass7: 'classphoto07',
-      PhotoCarroselClass8: 'classphoto08',
-      PhotoCarroselClass9: 'classphoto09',
+      
+      
       textcarrosel: 'Quer saber da próxima live ou rever a última? Vem pra cá',
       totalSlide: 4,
     },
@@ -388,18 +316,8 @@ export const product: ProductDetailsProps['product'][] =
       PhotoCarrosel4: 'url-da-foto-4',
       PhotoCarrosel5: 'url-da-foto-5',
       PhotoCarrosel6: 'url-da-foto-6',
-      PhotoCarrosel7: 'url-da-foto-7',
-      PhotoCarrosel8: 'url-da-foto-8',
-      PhotoCarrosel9: 'url-da-foto-9',
-      PhotoCarroselClass1: 'classphoto01',
-      PhotoCarroselClass2: 'classphoto02',
-      PhotoCarroselClass3: 'classphoto03',
-      PhotoCarroselClass4: 'classphoto04',
-      PhotoCarroselClass5: 'classphoto05',
-      PhotoCarroselClass6: 'classphoto06',
-      PhotoCarroselClass7: 'classphoto07',
-      PhotoCarroselClass8: 'classphoto08',
-      PhotoCarroselClass9: 'classphoto09',
+      
+      
       textcarrosel: 'Este tipo de biblioteca e amplamente usado por programadores para acelerar o processo de criação. ',
       totalSlide: 1,
     },
@@ -428,18 +346,8 @@ export const product: ProductDetailsProps['product'][] =
       PhotoCarrosel4: pokedexCa4,
       PhotoCarrosel5: 'url-da-foto-5',
       PhotoCarrosel6: 'url-da-foto-6',
-      PhotoCarrosel7: 'url-da-foto-7',
-      PhotoCarrosel8: 'url-da-foto-8',
-      PhotoCarrosel9: 'url-da-foto-9',
-      PhotoCarroselClass1: 'classphoto01',
-      PhotoCarroselClass2: 'classphoto02',
-      PhotoCarroselClass3: 'classphoto03',
-      PhotoCarroselClass4: 'classphoto04',
-      PhotoCarroselClass5: 'classphoto05',
-      PhotoCarroselClass6: 'classphoto06',
-      PhotoCarroselClass7: 'classphoto07',
-      PhotoCarroselClass8: 'classphoto08',
-      PhotoCarroselClass9: 'classphoto09',
+      
+      
       textcarrosel: 'Conheça todos os monstros da primeira temporada do anime',
       totalSlide: 4,
     },
@@ -468,18 +376,8 @@ export const product: ProductDetailsProps['product'][] =
       PhotoCarrosel4: cafeCa4,
       PhotoCarrosel5: cafeCa5,
       PhotoCarrosel6: cafeCa6,
-      PhotoCarrosel7: 'url-da-foto-7',
-      PhotoCarrosel8: 'url-da-foto-8',
-      PhotoCarrosel9: 'url-da-foto-9',
-      PhotoCarroselClass1: 'classphoto01',
-      PhotoCarroselClass2: 'classphoto02',
-      PhotoCarroselClass3: 'classphoto03',
-      PhotoCarroselClass4: 'classphoto04',
-      PhotoCarroselClass5: 'classphoto05',
-      PhotoCarroselClass6: 'classphoto06',
-      PhotoCarroselClass7: 'classphoto07',
-      PhotoCarroselClass8: 'classphoto08',
-      PhotoCarroselClass9: 'classphoto09',
+      
+      
       textcarrosel: 'Conheça e aprenda a fazer as últimas receitas mais deliciosas no nosso blog.',
       totalSlide: 6,
     },
@@ -512,18 +410,8 @@ export const product: ProductDetailsProps['product'][] =
       PhotoCarrosel4: 'url-da-foto-4',
       PhotoCarrosel5: 'url-da-foto-5',
       PhotoCarrosel6: 'url-da-foto-6',
-      PhotoCarrosel7: 'url-da-foto-7',
-      PhotoCarrosel8: 'url-da-foto-8',
-      PhotoCarrosel9: 'url-da-foto-9',
-      PhotoCarroselClass1: 'classphoto01',
-      PhotoCarroselClass2: 'classphoto02',
-      PhotoCarroselClass3: 'classphoto03',
-      PhotoCarroselClass4: 'classphoto04',
-      PhotoCarroselClass5: 'classphoto05',
-      PhotoCarroselClass6: 'classphoto06',
-      PhotoCarroselClass7: 'classphoto07',
-      PhotoCarroselClass8: 'classphoto08',
-      PhotoCarroselClass9: 'classphoto09',
+      
+      
       textcarrosel: 'Este site pode atender facilmente uma pequena loja e realizar seus controles de vendas e estoque.',
       totalSlide: 2,
     },
@@ -552,18 +440,8 @@ export const product: ProductDetailsProps['product'][] =
       PhotoCarrosel4: 'url-da-foto-4',
       PhotoCarrosel5: 'url-da-foto-5',
       PhotoCarrosel6: 'url-da-foto-6',
-      PhotoCarrosel7: 'url-da-foto-7',
-      PhotoCarrosel8: 'url-da-foto-8',
-      PhotoCarrosel9: 'url-da-foto-9',
-      PhotoCarroselClass1: 'classphoto01',
-      PhotoCarroselClass2: 'classphoto02',
-      PhotoCarroselClass3: 'classphoto03',
-      PhotoCarroselClass4: 'classphoto04',
-      PhotoCarroselClass5: 'classphoto05',
-      PhotoCarroselClass6: 'classphoto06',
-      PhotoCarroselClass7: 'classphoto07',
-      PhotoCarroselClass8: 'classphoto08',
-      PhotoCarroselClass9: 'classphoto09',
+      
+      
       textcarrosel: 'Conheça e aprenda a fazer as últimas receitas mais deliciosas no nosso site.',
       totalSlide: 3,
     },
@@ -595,18 +473,8 @@ export const product: ProductDetailsProps['product'][] =
       PhotoCarrosel4: 'url-da-foto-4',
       PhotoCarrosel5: 'url-da-foto-5',
       PhotoCarrosel6: 'url-da-foto-6',
-      PhotoCarrosel7: 'url-da-foto-7',
-      PhotoCarrosel8: 'url-da-foto-8',
-      PhotoCarrosel9: 'url-da-foto-9',
-      PhotoCarroselClass1: 'classphoto01',
-      PhotoCarroselClass2: 'classphoto02',
-      PhotoCarroselClass3: 'classphoto03',
-      PhotoCarroselClass4: 'classphoto04',
-      PhotoCarroselClass5: 'classphoto05',
-      PhotoCarroselClass6: 'classphoto06',
-      PhotoCarroselClass7: 'classphoto07',
-      PhotoCarroselClass8: 'classphoto08',
-      PhotoCarroselClass9: 'classphoto09',
+      
+      
       textcarrosel: 'O sistema foi criado com um administrador que pode criar cadastro de novos psicólogos com seu login e senha.',
       totalSlide: 1,
     },
@@ -635,18 +503,8 @@ export const product: ProductDetailsProps['product'][] =
       PhotoCarrosel4: 'url-da-foto-4',
       PhotoCarrosel5: 'url-da-foto-5',
       PhotoCarrosel6: 'url-da-foto-6',
-      PhotoCarrosel7: 'url-da-foto-7',
-      PhotoCarrosel8: 'url-da-foto-8',
-      PhotoCarrosel9: 'url-da-foto-9',
-      PhotoCarroselClass1: 'classphoto01',
-      PhotoCarroselClass2: 'classphoto02',
-      PhotoCarroselClass3: 'classphoto03',
-      PhotoCarroselClass4: 'classphoto04',
-      PhotoCarroselClass5: 'classphoto05',
-      PhotoCarroselClass6: 'classphoto06',
-      PhotoCarroselClass7: 'classphoto07',
-      PhotoCarroselClass8: 'classphoto08',
-      PhotoCarroselClass9: 'classphoto09',
+      
+      
       textcarrosel: 'O sitema foi criado com um adminstrador que pode criar cadastro de novos psicologos com seu login e senha.',
     }, */
     {
@@ -674,18 +532,8 @@ export const product: ProductDetailsProps['product'][] =
       PhotoCarrosel4: 'url-da-foto-4',
       PhotoCarrosel5: 'url-da-foto-5',
       PhotoCarrosel6: 'url-da-foto-6',
-      PhotoCarrosel7: 'url-da-foto-7',
-      PhotoCarrosel8: 'url-da-foto-8',
-      PhotoCarrosel9: 'url-da-foto-9',
-      PhotoCarroselClass1: 'classphoto01',
-      PhotoCarroselClass2: 'classphoto02',
-      PhotoCarroselClass3: 'classphoto03',
-      PhotoCarroselClass4: 'classphoto04',
-      PhotoCarroselClass5: 'classphoto05',
-      PhotoCarroselClass6: 'classphoto06',
-      PhotoCarroselClass7: 'classphoto07',
-      PhotoCarroselClass8: 'classphoto08',
-      PhotoCarroselClass9: 'classphoto09',
+      
+      
       textcarrosel: 'Quando configuradas de forma correta, o front end traz informações diretamente de um back end através da API',
       totalSlide: 1,
     },
@@ -714,18 +562,8 @@ export const product: ProductDetailsProps['product'][] =
       PhotoCarrosel4: 'url-da-foto-4',
       PhotoCarrosel5: 'url-da-foto-5',
       PhotoCarrosel6: 'url-da-foto-6',
-      PhotoCarrosel7: 'url-da-foto-7',
-      PhotoCarrosel8: 'url-da-foto-8',
-      PhotoCarrosel9: 'url-da-foto-9',
-      PhotoCarroselClass1: 'classphoto01',
-      PhotoCarroselClass2: 'classphoto02',
-      PhotoCarroselClass3: 'classphoto03',
-      PhotoCarroselClass4: 'classphoto04',
-      PhotoCarroselClass5: 'classphoto05',
-      PhotoCarroselClass6: 'classphoto06',
-      PhotoCarroselClass7: 'classphoto07',
-      PhotoCarroselClass8: 'classphoto08',
-      PhotoCarroselClass9: 'classphoto09',
+      
+      
       textcarrosel: 'Quando confiuradas de forma correta o front end traz informacoes diretamente de um back end atraves da API',
       totalSlide: 1,
     },
@@ -737,8 +575,10 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({ product }) => {
 
 
 
-  const handleSelect = (selectedIndex) => {
+  const handleSelect = (selectedIndex: any) => {
     setIndex(selectedIndex);
+    console.log(index);
+    return handleSelect;
   };
 
   const [currentSlide, setCurrentSlide] = useState(1);
@@ -757,7 +597,7 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({ product }) => {
     setCurrentSlide((prevSlide) => (prevSlide % totalSlides) + 1);
   };
 
-  const handleLinkClick = (path) => {
+  const handleLinkClick = (path: any) => {
     if (window.location.pathname === path) {
       // Se o usuário já está na mesma página, substitua a entrada mais recente no histórico
       window.history.replaceState(null, '', path);
@@ -809,26 +649,27 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({ product }) => {
             {Array.from({ length: totalSlides }).map((_, index) => (
               <img
                 key={`slide${index + 1}`}
-                src={product[`PhotoCarrosel${index + 1}`]}
+                src={String(product[`PhotoCarrosel${index + 1}` as keyof typeof product])}
                 alt=""
-                className={`slide ${currentSlide === index + 1 ? 'active' : ''} ${product[`imageClassSecret${index + 1}`]}`}
+                className={`slide ${currentSlide === index + 1 ? 'active' : ''} ${String(product[`imageClassSecret${index + 1}` as keyof typeof product])}`}
                 id={`slide${index + 1}`}
               />
             ))}
           </div>
+
           <p>{product.textcarrosel}</p>
         </div>
-        </RevealTwo>
-        <div className='links'>
-          <Link to={product.id === 0 ? '#' : `/projects/${product.id - 1}`} onClick={() => handleLinkClick(`/projects/${product.id - 1}`)}>
-            <FaArrowLeft /> Anterior
-          </Link>
-          <Link to="/projects" onClick={() => handleLinkClick('/projects')}>Projetos</Link>
-          <Link to={product.id === 13 ? '#' : `/projects/${product.id + 1}`} onClick={() => handleLinkClick(`/projects/${product.id + 1}`)} >
-            Próximo <FaArrowRight />
-          </Link>
+      </RevealTwo>
+      <div className='links'>
+        <Link to={product.id === 0 ? '#' : `/projects/${product.id - 1}`} onClick={() => handleLinkClick(`/projects/${product.id - 1}`)}>
+          <FaArrowLeft /> Anterior
+        </Link>
+        <Link to="/projects" onClick={() => handleLinkClick('/projects')}>Projetos</Link>
+        <Link to={product.id === 13 ? '#' : `/projects/${product.id + 1}`} onClick={() => handleLinkClick(`/projects/${product.id + 1}`)} >
+          Próximo <FaArrowRight />
+        </Link>
 
-        </div>
+      </div>
     </ProjectDetailBox>
   );
 };

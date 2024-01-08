@@ -13,14 +13,7 @@ const HeaderCV = () => {
   const [showActive, setShowActive] = useState(false);
   const [showNewActive, setShowNewActive] = useState(false);
  
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setHorarioAtual(new Date());
-    }, 1000);
-
-    // Limpar o intervalo quando o componente for desmontado
-    return () => clearInterval(intervalId);
-  }, []);
+ 
 
   useEffect(() => {
     if (isOpen) {
@@ -59,7 +52,7 @@ const HeaderCV = () => {
     }
   };
 
-  const handleLinkClick = (path) => {
+  const handleLinkClick = (path:any) => {
     if (window.location.pathname === path) {
       // Se o usuário já está na mesma página, substitua a entrada mais recente no histórico
       window.history.replaceState(null, '', path);

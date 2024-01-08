@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import { FiMenu, FiX, FiChevronsRight } from 'react-icons/fi';
 import { FaHome } from 'react-icons/fa';
 import { HeaderBox } from './style.';
@@ -6,14 +6,12 @@ import { Link } from 'react-router-dom';
 
 
 
-interface Props {
-  isItAboutPage: boolean;
-}
+
 
 // ... (importações omitidas para brevidade)
 
 const Header = () => {
-  const [listen, setListen] = useState(false);
+ 
   const [isOpen, setIsOpen] = useState(false);
   const [showActive, setShowActive] = useState(false);
   const [showNewActive, setShowNewActive] = useState(false);
@@ -65,7 +63,7 @@ const Header = () => {
     }
   };
 
-  const handleLinkClick = (path) => {
+  const handleLinkClick = (path: any) => {
     if (window.location.pathname === path) {
       // Se o usuário já está na mesma página, substitua a entrada mais recente no histórico
       window.history.replaceState(null, '', path);

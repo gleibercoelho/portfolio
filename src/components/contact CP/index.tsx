@@ -3,11 +3,11 @@ import { ContactComponentBox } from "./style";
 import { useState } from 'react';
 import { IoLogoWhatsapp } from "react-icons/io";
 import copy from 'clipboard-copy';
-import { useForm, ValidationError } from '@formspree/react';
+/* import { useForm, ValidationError } from '@formspree/react'; */
 import { IoCopy } from "react-icons/io5";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { motion, useAnimation } from "framer-motion";
+import { motion } from "framer-motion";
 import { RevealTwo } from "../test/reveal two";
 
 
@@ -16,9 +16,9 @@ const ContactComponent = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
-    const controls = useAnimation();
+    /* const controls = useAnimation(); */
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = async (e:any) => {
         e.preventDefault();
 
         // Configurar dados para enviar para o endpoint do Formspree
@@ -59,25 +59,25 @@ const ContactComponent = () => {
     };
 
     const copyEmail = () => {
-        event.preventDefault();
+        event?.preventDefault();
         const textToCopy = 'gleiberfelipe@hotmail.com';
         copy(textToCopy);
         toast.success("Email copiado!");
     };
     const copyNumber = () => {
-        event.preventDefault();
+        event?.preventDefault();
         const textToCopy = '31991326989';
         copy(textToCopy);
         toast.success("Whatsapp copiado!");
     };
     const copyLinkedin = () => {
-        event.preventDefault();
+        event?.preventDefault();
         const textToCopy = 'https://www.linkedin.com/in/gleiber-coelho-40ba6927/';
         copy(textToCopy);
         toast.success("Link do LinkedIn copiado!");
     };
     const copyGithub = () => {
-        event.preventDefault();
+        event?.preventDefault();
         const textToCopy = 'https://github.com/gleibercoelho';;
         copy(textToCopy);
         toast.success("Link do GitHub copiado!")
@@ -113,7 +113,7 @@ const ContactComponent = () => {
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d240300.7113113177!2d-44.16931426628847!3d-19.76795545981135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa686b107f0f8eb%3A0xff4527c57ed28253!2sSanta%20Luzia%2C%20MG!5e0!3m2!1spt-BR!2sbr!4v1703372366065!5m2!1spt-BR!2sbr"
                         width="600" height="450"
-                        style={{ border: "0", maxWidth: "100%", }} allowFullScreen="" loading="eager" referrerPolicy="no-referrer-when-downgrade">
+                        style={{ border: "0", maxWidth: "100%", }}  loading="eager" referrerPolicy="no-referrer-when-downgrade">
 
                     </iframe>
 

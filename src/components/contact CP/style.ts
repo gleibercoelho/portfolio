@@ -134,7 +134,7 @@ export const ContactComponentBox = styled.div`
         font-size: 25px;
     }
 }
-@media only screen and (max-width: 1260px){
+@media only screen and (max-width: 1310px){
     .MapNFormBox{
         flex-direction: column;
         align-items: center;

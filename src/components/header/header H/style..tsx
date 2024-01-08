@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-export const HeaderBox = styled.div`
+interface YourComponentProps {
+  isOpen?: boolean;
+}
+
+export const HeaderBox = styled.div<YourComponentProps>`
   display: flex;
   flex-direction: row;
   justify-content: space-between;

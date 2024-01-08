@@ -11,10 +11,11 @@ const ProductDetailsPage: React.FC = () => {
   
 
   // Utiliza o array de produtos exportado de ProductDetails
-  const selectedProduct = product.find((item) => item.id === parseInt(productId, 10));
+  const selectedProduct = product.find((item) => item.id === parseInt(productId ?? '', 10));
 
   if (!selectedProduct) {
     return <div>      
+      <Header/> 
       <p>Produto não encontrado</p>
       </div>;
   }

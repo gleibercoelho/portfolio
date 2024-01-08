@@ -1,5 +1,6 @@
 import { ProjectsBox } from "./style";
-import { useState, useEffect, useRef } from "react";
+import React from 'react';
+import { useState, useEffect} from "react";
 import { FaHtml5, FaCss3Alt, FaReact, FaGithub, FaCode, FaBootstrap } from "react-icons/fa";
 import { FaNodeJs, FaMagnifyingGlassPlus } from "react-icons/fa6";
 import { IoLogoJavascript } from "react-icons/io5";
@@ -38,20 +39,16 @@ const Projects = () => {
   const [isPrivateOpen, setIsPrivateOpen] = useState(false);
   const [secretDivState, setSecretDivState] = useState(false);
   const [myIndex, setMyIndex] = useState("");
-  const leftDivRef = useRef(null);
-  const rightDivRef = useRef(null);
-  const [leftDivClass, setLeftDivClass] = useState('');
-  const [rightDivClass, setRightDivClass] = useState('');
+  
 
-  function handleClick(event, index) {
+  function handleClick(event: any, index: any) {
     // Use o index para identificar a div clicada
     const clickedDiv = document.getElementById(`project-${index}`);
-    const leftDiv = clickedDiv?.querySelector(".leftProjects");
-    const rightDiv = clickedDiv?.querySelector(".RightProjects");
+
     const textDiv = clickedDiv?.querySelector(".textDiv");
     const cardDiv = clickedDiv?.querySelector(".card");
     const secretDiv = clickedDiv?.querySelector(".secretDiv");
-    
+    console.log(event);
     console.log(myIndex);
     // Alterne o estado da div secretDiv
 
@@ -60,38 +57,46 @@ const Projects = () => {
     
     
     /* const timeoutId = setTimeout(() => { */
-    if (secretDiv?.style.display === "none") {
+    if ((secretDiv as HTMLElement)?.style?.display === "none") {
       
      console.log(isPrivateOpen);
       toggleDivState(secretDiv);
         toggleDivState(textDiv);
         toggleDivState(cardDiv);
         
-      const timeoutId = setTimeout(() => {
+      const timeoutId: any = setTimeout(() => {
         execute();
         setMyIndex(index);
         console.log(isPrivateOpen);
+        return timeoutId;
       }, 200);   
     
     } else {
       setIsPrivateOpen(false);
       setMyIndex(index);
-      console.log(leftDivClass);
-      console.log(rightDivClass);
-    const timeoutId = setTimeout(() => {
+      
+    const timeoutId: any = setTimeout(() => {
      
       toggleDivState(secretDiv);
       toggleDivState(textDiv);
       toggleDivState(cardDiv);
-      
+      return timeoutId;
       
       
     }, 1000); 
-    const timeout = setTimeout(() => {
-      divRefs[index].current.classList.remove(`oriented-Div-animated${index}`);
-      setMyIndex("");
-      console.log(myIndex)
-    }, 1000);   
+    const timeout: any = setTimeout(() => {
+      const currentRef: any = divRefs[index]?.current;
+    
+      if (currentRef) {
+        const classList = currentRef.classList;
+        classList.remove(`oriented-Div-animated${index}`);
+        setMyIndex("");
+        console.log(myIndex);
+      }
+    
+      return timeout;
+    }, 1000);
+      
   }
   }
 
@@ -111,9 +116,7 @@ const Projects = () => {
     const clickedDiv = document.getElementById(`project-${(myIndex)}`);
     const secretDiv = clickedDiv?.querySelector(".secretDiv");
     const secretButton = clickedDiv?.querySelector(".saibaMais");
-    const leftDiv = clickedDiv?.querySelector(".leftProjects");
-    const rightDiv = clickedDiv?.querySelector(".RightProjects");
-   
+     
 
     if (isPrivateOpen) {
       secretDiv?.classList.add('show-animated');
@@ -125,17 +128,28 @@ const Projects = () => {
       secretButton?.classList.add('show-Button-transition');
       
       console.log(isPrivateOpen);
-      const timeoutId = setTimeout(() => {
+      const timeoutId: any = setTimeout(() => {
         secretButton?.classList.remove('show-Button');
         secretButton?.classList.remove('show-Button-transition');  
         console.log(isPrivateOpen);
+        return timeoutId;
       }, 1000);
-      if( myIndex !== ""){
-        const timeout = setTimeout(() => {
-          divRefs[myIndex].current.classList.add(`oriented-Div-animated${myIndex}`)
-          console.log(myIndex);
-      }, 300); 
+      if (myIndex !== "") {
+        const numericIndex: number = parseInt(myIndex, 10);
       
+        if (!isNaN(numericIndex)) {
+          const timeout: any = setTimeout(() => {
+            const currentRef: any = divRefs[numericIndex]?.current;
+      
+            if (currentRef && currentRef.current) {
+        const classList = currentRef.current.classList;
+        classList.add(`oriented-Div-animated${numericIndex}`);
+        console.log(myIndex);
+      }
+      
+            return timeout;
+          }, 300);
+        }
   }}
   }, [isPrivateOpen, myIndex]);
 
@@ -286,39 +300,42 @@ const projectData = [
   // Adicione outros projetos conforme necessário
 ];
 
-interface CarouselProps {
-  totalSlides: number;
-}
 
 
 const [currentSlide, setCurrentSlide] = useState(1);
 const [intervalId, setIntervalId] = useState<NodeJS.Timeout | null>(null);
 
-const showSlide = (slideNumber) => {
+const showSlide = (myIndex: any) => {
   // ... (mantenha o código para ocultar os slides não necessários)
-  const currentSlideElement = document.getElementById(`slide${slideNumber}-${index}`);
+  const currentSlideElement = document.getElementById(`slide${myIndex}-${myIndex}`);
   if (currentSlideElement) {
     currentSlideElement.style.display = 'flex';
   }
 };
+
 
 const totalSlides = 3;
 
 useEffect(() => {
   if (secretDivState) {
     startInterval();
-  } else {
+  } /* else {
     stopInterval();
-  }
+  } */
 
-  return () => {
+ /*  return () => {
     stopInterval();
-  };
+  }; */
 }, [secretDivState]);
 
 const nextSlide = () => {
-  setCurrentSlide((prevSlide) => (prevSlide % totalSlides) + 1);
+  setCurrentSlide((prevSlide) => {
+    const newSlide = (prevSlide % totalSlides) + 1;
+    showSlide(newSlide); // Chama showSlide com o novo índice do slide
+    return newSlide;
+  });
 };
+
 
 const startInterval = () => {
   if (!intervalId) {
@@ -329,12 +346,12 @@ const startInterval = () => {
   }
 };
 
-const stopInterval = () => {
+/* const stopInterval = () => {
   if (intervalId) {
     clearInterval(intervalId);
     setIntervalId(null);
   }
-};
+}; */
 
 const autoStartInterval = () => {
   if (!secretDivState) {
@@ -342,7 +359,10 @@ const autoStartInterval = () => {
   }
 };
 
- const divRefs = Array.from({ length: projectData.length }, () => useRef());
+
+const divRefs = Array.from({ length: totalSlides }, () => React.createRef<HTMLElement>());
+
+
 
 return (
   <ProjectsBox >
@@ -350,7 +370,7 @@ return (
     <div>
       {projectData.map((project, index) => (
         <Reveal>
-          <section ref={divRefs[index]} className={`${index % 2 === 0 ? "leftProjects" : "RightProjects"} ${index % 2 === 0 && leftDivClass !== "" ? leftDivClass : ""} ${index % 2 !== 0 && rightDivClass !== "" ? rightDivClass : ""}`} key={index} id={`project-${index}`}>
+          <section ref={divRefs[index]} className={`${index % 2 === 0 ? "leftProjects" : "RightProjects"} `} key={index} id={`project-${index}`}>
             {/* Use a lógica de condicional para alternar a ordem */}
             {index % 2 === 0 ? (
               <>

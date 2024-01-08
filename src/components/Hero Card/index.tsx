@@ -2,7 +2,7 @@ import { MainCardBox } from "./style";
 import photo from "../../assets/Captura de tela 2023-01-05 012557.png"
 import { useEffect, useState } from 'react';
 import { useSpring, animated } from 'react-spring';
-import { motion, useAnimation } from "framer-motion";
+import { motion } from "framer-motion";
 
 const MainCard = () => {
 
@@ -10,7 +10,7 @@ const MainCard = () => {
     useEffect(() => {
         const position = document.documentElement;
 
-        const handleMouseMove = (e) => {
+        const handleMouseMove = (e:any) => {
             position.style.setProperty('--x', e.clientX + 'px');
         };
 
@@ -58,13 +58,14 @@ const MainCard = () => {
         );
     };
     const CustomHeadingP: React.FC<CustomHeadingProps> = ({ children, style, ...rest }) => {
+        console.log(CustomHeadingP);
         return (
             <p style={style} {...rest}>
                 {children}
             </p>
         );
     };
-    const controls = useAnimation();
+   
 
     return (
         <MainCardBox>

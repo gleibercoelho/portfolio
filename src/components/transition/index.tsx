@@ -1,10 +1,15 @@
 import { motion } from "framer-motion";
 import { TRANSBOX } from "./style";
-import { AnimatePresence } from "framer-motion";
+import React, { ReactNode } from 'react';
 
-const TransitionWrapper = ({ children }) => {
+interface TransitionWrapperProps {
+  children: ReactNode;
+}
 
-  const anim = (variants, custom) => {
+
+const TransitionWrapper:React.FC<TransitionWrapperProps> = ({ children }) => {
+
+  const anim = (variants: any, custom: any) => {
     return {
       initial: "initial",
       animate: "enter",
@@ -18,7 +23,7 @@ const TransitionWrapper = ({ children }) => {
     initial: {
       top: 0
     },
-    enter: (i) => ({
+    enter: (i: any) => ({
       top: "100%",
       transition: {
         duration: 0.7,
@@ -29,7 +34,7 @@ const TransitionWrapper = ({ children }) => {
         top: 0
       }
     }),
-    exit: (i) => ({
+    exit: (i: any) => ({
       height: "100%",
       transition: {
         duration: 0.7,
