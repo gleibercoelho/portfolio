@@ -301,7 +301,7 @@ section{
         color: #00C89B;
         top: 16.25rem;        
         height: 22.5rem;
-        width: 99%;
+        width: 98%;
         z-index: 3;
         margin: 0px;
         padding: 0px;
@@ -333,27 +333,29 @@ section{
     @media only screen and (max-width: 768px){
 
         h1{
-            font-size: 45px;
+            font-size: 40px;
             flex-wrap: wrap;
-            width: 350px;
+            width: 320px;
             left: 30px;
             line-height: 100px;
             top: 50px;
+            overflow: hidden;
         }
 
         .caixa {           
-            left: 0px;
-            top: -200px;
+            left: 70px;
+            top: -270px;
             z-index: -2;
-             
+            width: 300px;
+            height: 300px;
             }
 
             img{
                 width: 230px;
                 object-fit: contain;                
                 position: relative !important;
-                top: -80px !important;
-                left: 75px !important;
+                top: 20px !important;
+                left: 50px !important;
                 z-index: 0;                
             }
 
@@ -1201,7 +1203,7 @@ p{
 .eight{
         align-self: end;
         padding-top: 280px;
-        font-size: 20px;
+        font-size: 10px;
         color: #1D4D60;
     }
 
@@ -2167,6 +2169,10 @@ p{
   grid-row: span 2 !important;
   grid-row-gap: wrap;
   margin: 0 20px;
+
+  .pokedexHero{
+    top: 0px !important;
+  }
 }
 `,Nj=et.div`
 display: flex;
@@ -2421,7 +2427,7 @@ font-family: 'Poppins', sans-serif;
             padding: 0 20px 0 20px;
 
             img{
-                width: 85vw !important;
+                width: 75vw !important;
                 padding-left: 0px !important;
                 padding: 0 20px !important;
                 object-fit: contain !important;
