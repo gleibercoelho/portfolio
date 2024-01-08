@@ -5,9 +5,13 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
-        <App />        
-      </BrowserRouter>
+    <Router>
+      <Routes>
+        
+    <Route path='/' element={<App/>} />
+    
+    </Routes>
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
