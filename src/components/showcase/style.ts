@@ -167,6 +167,10 @@ p{
   grid-row: span 2 !important;
   grid-row-gap: wrap;
   margin: 0 20px;
+
+  .pokedexHero{
+    top: 0px !important;
+  }
 }
 `;
 

@@ -46,7 +46,7 @@ p{
 .eight{
         align-self: end;
         padding-top: 280px;
-        font-size: 20px;
+        font-size: 10px;
         color: #1D4D60;
     }
 

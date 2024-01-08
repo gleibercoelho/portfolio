@@ -217,7 +217,7 @@ font-family: 'Poppins', sans-serif;
             padding: 0 20px 0 20px;
 
             img{
-                width: 85vw !important;
+                width: 75vw !important;
                 padding-left: 0px !important;
                 padding: 0 20px !important;
                 object-fit: contain !important;
