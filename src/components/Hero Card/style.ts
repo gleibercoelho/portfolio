@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 export const MainCardBox = styled.div`
-*{
+
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 
 
-}
+
 
 height: 43.125rem;
 overflow: hidden;
@@ -176,16 +176,17 @@ section{
            width: 420px;     
         }
         .caixa {           
-            left: 350px;
+            left: 400px;
             top: -400px;
             z-index: -2;
+            backgroud-color:
             
              
             }
             img{
                 width: 400px;
                 position: relative;
-                top: 20px !important;
+                top: -50px !important;
                 left: 20px !important;
     }
     }
@@ -195,7 +196,7 @@ section{
         h1{
             font-size: 45px;
             flex-wrap: wrap;
-            width: 420px;
+            width: 350px;
             left: 30px;
             line-height: 100px;
             top: 50px;
@@ -225,6 +226,11 @@ section{
         
             height: 600px;
             overflow: hidden;
+    }
+
+    .text h2{
+        font-size: 70px;
+        line-height: 14px;
     }
     
 `;

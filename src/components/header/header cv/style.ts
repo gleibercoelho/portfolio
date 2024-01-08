@@ -172,11 +172,18 @@ export const HeaderBoxCV = styled.div<YourComponentProps>`
     }
     li a{
       font-size: 40px;
+      color: white;
+    }
+    li{
+      padding-left: 25%
     }
     
   }
   .toast-menu.active .button.show{
     padding-left: 70px;
+  }
+  .fade-in.show.svg{
+    padding-right: 70px;
   }
 }
 `;

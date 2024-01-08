@@ -82,9 +82,12 @@ transition: opacity 1s;
       height: 30px;
       font-size: 20px;
       width: 120px;
-      border-radius: 10px;
-      color:#00255C;
+      border: none;
+      border-radius: 5px;
+      color: black;
       background-color: #6572B3;
+      font-family: 'Poppins', sans-serif;
+      align-items: center;
     }
    
 }
@@ -102,9 +105,12 @@ transition: opacity 1s;
       height: 30px;
       font-size: 20px;
       width: 120px;
-      border-radius: 10px;
-      color:#00255C;
+      border: none;
+      border-radius: 5px;
+      color: black;
       background-color: #6572B3;
+      font-family: 'Poppins', sans-serif;
+      align-items: center;
     }
 }
 
@@ -453,6 +459,12 @@ svg{
   height: 300px;
   margin: 50px 0;
   background-color: none;
+  .textDiv h2{
+    margin-bottom: 20px;
+  }
+  .textDiv p{
+    margin-top: 0px;
+  }
 }
 
 .card img {
@@ -717,7 +729,7 @@ svg{
              
               
               p{
-                font-size: 20px;
+                font-size: 23px;
                 padding-left: 10%;
                 width: 80%;
                 color: #D0A616 !important;

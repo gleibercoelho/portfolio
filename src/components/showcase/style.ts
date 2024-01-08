@@ -166,6 +166,7 @@ p{
   grid-column: span 3 !important;
   grid-row: span 2 !important;
   grid-row-gap: wrap;
+  margin: 0 20px;
 }
 `;
 
@@ -199,10 +200,12 @@ h1{
 padding-bottom: 20px;
 @media only screen and (max-width: 1236px){
   min-width: 100% !important;
+
  
 }
 @media only screen and (max-width: 768px){
   min-width: 100% !important;
+  
 }
 `
 ;

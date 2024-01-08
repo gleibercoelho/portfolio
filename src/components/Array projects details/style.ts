@@ -216,9 +216,12 @@ font-family: 'Poppins', sans-serif;
             flex-direction: column;
             padding: 0 20px 0 20px;
 
-            .carousel .slide.active img{
-                width: 100% !important;
+            img{
+                width: 85vw !important;
                 padding-left: 0px !important;
+                padding: 0 20px !important;
+                object-fit: contain !important;
+                margin-bottom: 50px !important;
             }
             p{
                 margin-left: 20px;

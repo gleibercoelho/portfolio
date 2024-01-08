@@ -139,7 +139,7 @@ export const product: ProductDetailsProps['product'][] =
       heroPhoto: ggwpHero,
       heroPhotoClass: 'classeHerophoto0',
       title: 'GG-WP',
-      subText: 'Esta é uma aplicação web desenvolvida em React. Criada para jogadores do game League of Leguends.',
+      subText: 'Esta é uma aplicação web desenvolvida em React. Criada para jogadores do game League of Legends.',
       subText2: 'Essa aplicação foi desenvolvida para mostrar os status das partidas de qualquer jogador de Lol em qualquer servidor do mundo. Basta digitar um nome de usuário válido para acessar os dados do jogador.',
       infoEnd: 'https://www.gg-wp.info/',
       infoRepo: '#',

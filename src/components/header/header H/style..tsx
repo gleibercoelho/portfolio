@@ -148,6 +148,7 @@ export const HeaderBox = styled.div<YourComponentProps>`
     }
     li{
       font-size: 40px;
+      padding-left: 25%
     }
     
   }
