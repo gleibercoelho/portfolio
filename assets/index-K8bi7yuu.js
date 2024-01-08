@@ -84,6 +84,9 @@ Error generating stack: `+i.message+`
         position: fixed;
         top: 0;
         left: 0;
+        margin: 0;
+        padding: 0;
+        border: none; 
         pointer-events: none;
         display: flex;
         z-index: 999;
@@ -92,6 +95,9 @@ Error generating stack: `+i.message+`
             position: relative;
             height: 100%;
             width: 100%;
+            margin: 0;
+            padding: 0;
+            border: none; 
             background-color: #000000;
             z-index: 999;
         }
@@ -1460,6 +1466,14 @@ height: 100%;
     transition: opacity 0s
   }
 
+  @media only screen and (max-width: 1260px){
+    .toast-menu{
+     
+       li{
+      
+      padding-left: 25%
+    }
+  }
   @media only screen and (max-width: 768px){
 
     h1{
@@ -1764,7 +1778,13 @@ hr{
     opacity: 1;
     transition: opacity 0s
   }
-
+  @media only screen and (max-width: 1260px){
+    .toast-menu{
+      
+   
+    li{
+      padding-left: 25%
+  }}}
   @media only screen and (max-width: 768px){
 
     h1{
@@ -2170,6 +2190,10 @@ p{
 @media only screen and (max-width: 1236px){
   grid-column: span 3 !important;
   grid-row: span 2 !important;
+  
+  .pokedexHero{
+    top: 0px !important;
+  }
   
 }
 @media only screen and (max-width: 768px){
