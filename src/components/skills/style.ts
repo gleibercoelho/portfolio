@@ -117,7 +117,7 @@ svg{
     }
     h2{
         font-size: 25px;
-        margin: 0;
+        margin: 20px 0;
         padding: 0;
         text-justify: center !important;
     }

@@ -90,15 +90,16 @@ const MainCard = () => {
                 <CustomHeading style={{ '--i': 0.75 }}><animated.div style={{ transform, transition: 'transform 0.s ease-in-out' }}><span>Gleiber Coelho</span><span>Gleiber Coelho</span><span>Gleiber Coelho</span><span>Gleiber Coelho</span><span>Gleiber Coelho</span><span>Gleiber Coelho</span><span>Gleiber Coelho</span><span>Gleiber Coelho</span><span>Gleiber Coelho</span><span>Gleiber Coelho</span></animated.div></CustomHeading>
             </motion.div>
             <div className="box">
-                
-                <motion.h1
-                    initial={{ opacity: 0, x: -100 }}
+                 
+                <motion.div 
+                initial={{ opacity: 0, x: -100 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1, delay: .75 }}
-                 
-                    >
+                 className="title" >
+                <h1>
                     Front-End Desenvolvedor
-                </motion.h1>
+                </h1>
+                </motion.div>
                 <motion.div
                     initial={{ opacity: 0, x: 100 }}
                     animate={{ opacity: 1, x: 0 }}

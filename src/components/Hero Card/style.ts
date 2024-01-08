@@ -9,33 +9,33 @@ export const MainCardBox = styled.div`
 
 
 
-height: 43.125rem;
-overflow: hidden;
-background-color: black;
-
-
-section{
-   
-    position: relative;
-    width: 100%;
-    height: 6.25rem;
+    height: 43.125rem;
     overflow: hidden;
-    background: red;
-    font-family: 'Poppins', sans-serif;
-    z-index: 0;
-    overflow: hidden;
-}
-.text{
-    position: relative;
-    transform: skewY(345deg) translateY(-200px) !important;
     background-color: black;
-    /* animation: animatedColor 5s linear infinite; */
-    z-index: 1;
-    height: 1300px;
-    width: 100%;
-    bottom: 100px;
-    overflow: hidden;
-}
+
+
+        section{
+        
+            position: relative;
+            width: 100%;
+            height: 6.25rem;
+            
+            background: red;
+            font-family: 'Poppins', sans-serif;
+            z-index: 0;
+            
+        }
+        .text{
+            position: relative;
+            transform: skewY(345deg) translateY(-200px) !important;
+            background-color: black;
+            /* animation: animatedColor 5s linear infinite; */
+            z-index: 1;
+            height: 1300px;
+            width: 100%;
+            bottom: 100px;
+            overflow: hidden;
+        }
 
 /* @keyframes animatedColor {
     0%{
@@ -47,83 +47,45 @@ section{
     
 } */
 
-.text h2{
+    .text h2{
+        position: relative;
+        width: 100%;
+        font-size: 6em;
+        color: purple;
+        pointer-events: none;
+        line-height: 1em;
+        white-space: nowrap;
+        text-shadow: calc(var(--x)) 100px 0 rgba(255,255,255,0.2);  
+        transform: translateX(calc(0% - var(--x) * var(--i)));
+        opacity: 1;
+    }
+
+    /* .text p {
     position: relative;
     width: 100%;
-    font-size: 6em;
-    color: purple;
+    font-size: 1em;
+    color: white;
     pointer-events: none;
     line-height: 1em;
     white-space: nowrap;
-    text-shadow: calc(var(--x)) 100px 0 rgba(255,255,255,0.2);  
-    transform: translateX(calc(0% - var(--x) * var(--i)));
+    text-shadow: var(--x, 0) 0 0 rgba(255, 255, 255, 0.95);
+                
+    transform: translateX(calc(0% - var(--x, 0) * var(--i))); 
     opacity: 1;
-}
-
-/* .text p {
-  position: relative;
-  width: 100%;
-  font-size: 1em;
-  color: white;
-  pointer-events: none;
-  line-height: 1em;
-  white-space: nowrap;
-  text-shadow: var(--x, 0) 0 0 rgba(255, 255, 255, 0.95);
-               
-  transform: translateX(calc(0% - var(--x, 0) * var(--i))); 
-  opacity: 1;
-} */
+    } */
 
 
-.text h2 span{
-   color: #F9F871;
-   margin: 0 10px;
-}
-.text h2 span:nth-child(even){
-    color: transparent;
-    -webkit-text-stroke: 2px white;
-}
-   h1 {
-    position: relative;
-    font-family: 'Poppins', sans-serif;
-    font-size: 120px;
-    font-weight: 600;
-    line-height: 170px;
-    width: 900px;
-    z-index: 0;
-    top: 0px;
-    left: 100px;
-    color: #479ED0;
-    /* background-color: rgba(250, 250, 250, 0.6); */
-    /* -webkit-text-stroke: 1px #82A0AA;  */
-    
-    
-  } 
-
-  .caixa {
-    position: relative;
-    width: 400px;
-    height: 400px;   
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
-    z-index: -2; 
-    top: -375px;
-    left: 890px;
-    border-radius: 50%;
-    overflow: hidden;
-    
-
-    img {
-      position: absolute;
-      border-radius: 50%;
-      top: -60px;;
-      left: -50px;
-      transform: scale(.76);
-      z-index: 4; 
-      border: solid 5px white;
+    .text h2 span{
+    color: #F9F871;
+    margin: 0 10px;
     }
+    .text h2 span:nth-child(even){
+        color: transparent;
+        -webkit-text-stroke: 2px white;
+    }
+   
+
+  
 
   
 
@@ -154,85 +116,132 @@ section{
     &::after{
         filter: blur(15px);
     }  */
-  }
 
   .box{
-        position: absolute;
+       
         background-image: linear-gradient(to right, #000000, #090506, #100a0d, #150e12, #191217);
-        color: #00C89B;
-        top: 16.25rem;        
-        height: 22.5rem;
-        width: 98%;
-        z-index: 3;
-        margin: 0px;
-        padding: 0px;
-        box-sizing: border-box !important;
-        margin-block-start: 0 !important;
-        margin-inline-start: 0 !important;
+        color: #00C89B;              
+        height: 22.5rem;        
+        z-index: 3;     
+        position: relative;
+        top: -75rem; 
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+        .title {
+            position: relative;
+            font-family: 'Poppins', sans-serif;                   
+            width: 60%;
+            z-index: 0;
+            top: 0px;
+            left: 8%;
+            color: #479ED0;  
+            h1{
+                
+                font-size: 120px;
+            font-weight: 600;
+            line-height: 130px;    
+            }
+        } 
+        .caixa {
+            position: relative;
+            width: 40%;
+            height: 100%;            
+            z-index: -2;    
+           border-radius: 0%;
+           
+           
+                img {            
+           
+           border-radius: 50%; 
+           transform: scale(1.0);
+           position: relative;
+           top: -70px; 
+           left: 5px;                                
+            z-index: -3;
+           
+           
+            
+            }
+        
+        }
     }
     @media only screen and (max-width: 1310px){
-        h1{
+        .box{
+            
+            .title{
+                h1{
            font-size: 60px;
-           width: 420px;     
-        }
-        .caixa {           
+           width: 600px;     
+        }}
+        .caixa {
+            img{
+                width: 300px;
+                object-fit: contain; 
+                top: 20px ;
+                left: -100px ;
+            }}
+    }
+        /* .caixa {           
             left: 400px;
             top: -400px;
             z-index: -2;
-            backgroud-color:
+            background-color: transparent;
             
              
-            }
+            
             img{
                 width: 400px;
                 position: relative;
                 top: -50px !important;
                 left: 20px !important;
     }
+    } */
     }
-
     @media only screen and (max-width: 768px){
 
-        h1{
-            font-size: 40px;
-            flex-wrap: wrap;
-            width: 320px;
-            left: 30px;
-            line-height: 100px;
-            top: 50px;
-            overflow: hidden;
-        }
-
-        .caixa {           
-            left: 70px;
-            top: -270px;
-            z-index: -2;
-            width: 300px;
-            height: 300px;
-            }
-
-            img{
-                width: 230px;
-                object-fit: contain;                
-                position: relative !important;
-                top: 20px !important;
-                left: 50px !important;
-                z-index: 0;                
-            }
+     
+        height: 500px;
+        
 
         .box{
             height: 18.75rem; 
-            width: 100%;           
-        }
-       
-        
-            height: 600px;
-            overflow: hidden;
+            width: 100%; 
+
+             h1{
+            font-size: 40px !important; 
+            left: 30px;
+            line-height: 100px;
+            width: 380px !important;
+            top: 50px;
+            }          
+            .caixa {           
+           /*  left: 70px;
+            top: -270px;
+            z-index: -2;
+            width: 300px;
+            height: 300px; */
+            
+
+            img{
+                width: 230px;
+                object-fit: contain; 
+                top: 20px ;
+                left: -80px ;    
+                /*            
+                position: relative !important;
+                
+                z-index: 0;   */              
+            }
+        }       
     }
+            
 
     .text h2{
         font-size: 70px;
         line-height: 14px;
     }
-    
+}
 `;
