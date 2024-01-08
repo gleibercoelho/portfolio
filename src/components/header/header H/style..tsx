@@ -125,6 +125,14 @@ export const HeaderBox = styled.div<YourComponentProps>`
     transition: opacity 0s
   }
 
+  @media only screen and (max-width: 1260px){
+    .toast-menu{
+     
+       li{
+      
+      padding-left: 25%
+    }
+  }
   @media only screen and (max-width: 768px){
 
     h1{

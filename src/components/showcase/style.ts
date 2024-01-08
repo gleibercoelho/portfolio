@@ -160,6 +160,10 @@ p{
   grid-column: span 3 !important;
   grid-row: span 2 !important;
   
+  .pokedexHero{
+    top: 0px !important;
+  }
+  
 }
 @media only screen and (max-width: 768px){
 

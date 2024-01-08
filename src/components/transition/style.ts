@@ -9,6 +9,9 @@ export const TRANSBOX = styled.div`
         position: fixed;
         top: 0;
         left: 0;
+        margin: 0;
+        padding: 0;
+        border: none; 
         pointer-events: none;
         display: flex;
         z-index: 999;
@@ -17,6 +20,9 @@ export const TRANSBOX = styled.div`
             position: relative;
             height: 100%;
             width: 100%;
+            margin: 0;
+            padding: 0;
+            border: none; 
             background-color: #000000;
             z-index: 999;
         }
