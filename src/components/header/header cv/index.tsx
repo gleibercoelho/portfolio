@@ -96,7 +96,7 @@ const HeaderCV = () => {
         </div>
       )}
     
-        <a href="/assets/Profile(7).pdf" download><HiDocumentDownload className="CV" /><p> Baixar CV</p></a>  
+        <a href="/assets/Gleiber Coelho CV.pdf" download><HiDocumentDownload className="CV" /><p> Baixar CV</p></a>  
     </HeaderBoxCV>
   );
 };
