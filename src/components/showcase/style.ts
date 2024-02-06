@@ -56,7 +56,7 @@ export const GridItem = styled.div`
   width: 100%;
   height: 120%;
   position: relative;
-  top: 70px;
+  top: 0px;
   left: 100px;
   }
 .ommaHero{
@@ -114,13 +114,15 @@ export const GridItem = styled.div`
   width: 100%;
   height: 100%;
 }
-.APIFeriadoHero{
-    transform: scale(1.0);
+.agencyHero{
+  position: relative;
+    transform: scale(2.0);
   object-fit: cover;
   width: 95%;
   height: 100%;
+  left: 60px;
 }
-.APICEPHero{
+.barbershopHero{
     transform: scale(1.0);
   object-fit: cover;
   width: 100%;
@@ -159,9 +161,10 @@ p{
 @media only screen and (max-width: 1236px){
   grid-column: span 3 !important;
   grid-row: span 2 !important;
-  
+   
   .pokedexHero{
-    top: 0px !important;
+    top: -50px !important;
+    transform: scale(2.0)
   }
   
 }
@@ -175,6 +178,15 @@ p{
   .pokedexHero{
     top: 0px !important;
   }
+  .agencyHero{
+  position: relative;
+    transform: scale(1.5);
+  object-fit: cover;
+  width: 95%;
+  height: 100%;
+  left: 60px;
+  bottom: -10px; 
+}
 }
 `;
 

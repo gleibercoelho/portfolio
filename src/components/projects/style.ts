@@ -375,46 +375,46 @@ svg{
   bottom: 150px;
   animation: shaking 4s ease-in-out infinite;
 }
-.slide.active.DindinSecretOne {
+.slide.active.BarbershopSecretOne {
   position: relative;  
-  left: -420px;
-  bottom: 250px;   
-  zoom: 1.3;
+  left: -50px;
+  bottom: 0px;   
+  zoom: 4.0;
   animation: shaking 4s ease-in-out infinite;
 }
-.slide.active.DindinSecretTwo {
+.slide.active.BarbershopSecretTwo {
   position: relative;  
-  zoom: 1.2;
-  left: -350px;
-  bottom: 125px;
+  zoom: 4.0;
+  left: -50px;
+  bottom: 75px;
   animation: shakingInverse 4s ease-in-out infinite;
 }
-.slide.active.DindinSecretThree {
+.slide.active.BarbershopSecretThree {
   position: relative;
-  zoom: 1.3;
-  left: -410px;
-  bottom: 150px;
+  zoom: 4.0;
+  left: -50px;
+  bottom: 50px;
   animation: shaking 4s ease-in-out infinite;
 }
-.slide.active.SheillaSecretOne {
+.slide.active.agenciaSecretOne {
   position: relative;  
-  left: -420px;
-  bottom: 250px;   
+  left: -100px;
+  bottom: 100px;   
   zoom: 1.3;
   animation: shaking 4s ease-in-out infinite;
 }
-.slide.active.SheillaSecretTwo {
+.slide.active.agenciaSecretTwo {
   position: relative;  
   zoom: 1.2;
-  left: -350px;
-  bottom: 125px;
+  left: -100px;
+  bottom: 0px;
   animation: shakingInverse 4s ease-in-out infinite;
 }
-.slide.active.SheillaSecretThree {
+.slide.active.agenciaSecretThree {
   position: relative;
   zoom: 1.3;
-  left: -410px;
-  bottom: 100px;
+  left: -100px;
+  bottom: 50px;
   animation: shaking 4s ease-in-out infinite;
 }
 
@@ -503,11 +503,11 @@ svg{
   left: 0px;
   /* transform: translateY(2px); */
 }
-.Dindin{
+.BarberShop{
   position: relative;
-  transform: scale(5.45);
-  top: 570px;
-  left: -15px;
+  transform: scale(5.0);
+  top: 340px;
+  left: 0px;
   /* transform: translateY(2px); */
 }
 .Sheilla{
@@ -634,10 +634,10 @@ svg{
      .Soundgarden{
       top: 150px;
      }
-     .Dindin{
-      top: 350px;
-      left: 10px;
-      transform: scale(4.5);
+     .BarberShop{
+      top: 90px;
+      left: 0px;
+      transform: scale(3.3);
      }
     }
     .secretDiv{

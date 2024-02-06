@@ -1,10 +1,12 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import { FaHtml5, FaCss3Alt, FaReact, FaSass, FaBootstrap, FaGithub, FaArrowLeft, FaArrowRight } from "react-icons/fa";
-import { FaNodeJs, FaLink } from "react-icons/fa6";
+import { FaHtml5, FaCss3Alt, FaReact, FaGithub, FaCode, FaBootstrap, FaSass, FaLink, FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { FaNodeJs, FaMagnifyingGlassPlus } from "react-icons/fa6";
 import { IoLogoJavascript } from "react-icons/io5";
-import { SiRedux, SiStyledcomponents, SiTypescript } from "react-icons/si";
+import { DiPostgresql } from "react-icons/di";
+import { SiRedux, SiStyledcomponents, SiTypescript, SiMongodb, SiNextdotjs, SiPrisma, SiTailwindcss } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
+import { RiSupabaseLine } from "react-icons/ri";
 import { ProjectDetailBox } from './style';
 import { Link } from 'react-router-dom';
 import CafeHero from "../../assets/cafe/FireShot Capture 030 - Café 3 Corações - .png"
@@ -65,8 +67,23 @@ import lavieBody from "../../assets/La Vie/0_MNVJq_8e0SJoqZb5.jpg"
 import codeleapHero from "../../assets/codeleap/codeleap.png"
 import codeleapBody from "../../assets/codeleap/FireShot Capture 013 - Codeleap - gleibercoelho.github.io.png"
 import codeleapCa1 from "../../assets/codeleap/FireShot Capture 015 - Codeleap - gleibercoelho.github.io.png"
-import APIFeriadoHero from "../../assets/Feriados API/FireShot Capture 064 - Consulta feriados - 127.0.0.1.png"
-import APICEPHero from "../../assets/CEP API/FireShot Capture 065 - Consulta API-CEP - 127.0.0.1.png"
+import BarbershopHero from "../../assets/barbershop/e995db6d-df96-4658-99f5-11132fd931e1-17j.jpg"
+import BarbershopBody from "../../assets/barbershop/FireShot Capture 073 - Create Next App - barbershop-virid.vercel.app.png"
+import BarbershopCa1 from "../../assets/barbershop/FireShot Capture 074 - Create Next App - barbershop-virid.vercel.app.png"
+import BarbershopCa2 from "../../assets/barbershop/FireShot Capture 075 - Fazer login nas Contas do Google - accounts.google.com.png"
+import BarbershopCa3 from "../../assets/barbershop/FireShot Capture 076 - Create Next App - barbershop-virid.vercel.app.png"
+import BarbershopCa4 from "../../assets/barbershop/FireShot Capture 077 - Create Next App - barbershop-virid.vercel.app.png"
+import BarbershopCa5 from "../../assets/barbershop/FireShot Capture 078 - Create Next App - barbershop-virid.vercel.app.png"
+import BarbershopCa6 from "../../assets/barbershop/FireShot Capture 079 - Create Next App - barbershop-virid.vercel.app.png"
+import BarbershopCa7 from "../../assets/barbershop/FireShot Capture 081 - Create Next App - barbershop-virid.vercel.app.png"
+import BarbershopCa8 from "../../assets/barbershop/FireShot Capture 082 - Create Next App - barbershop-virid.vercel.app.png"
+import AgencyHero from "../../assets/blog/FireShot Capture 067 - Netxt.js 14 Homepage - localhost.png"
+import AgencyBody from "../../assets/blog/FireShot Capture 067 - Netxt.js 14 Homepage - localhost.png"
+import AgencyCa1 from "../../assets/blog/FireShot Capture 067 - Netxt.js 14 Homepage - localhost.png"
+import AgencyCa2 from "../../assets/blog/FireShot Capture 068 - About Page - Next.js 14 - localhost.png"
+import AgencyCa3 from "../../assets/blog/FireShot Capture 069 - Contact Page - Next.js 14 - localhost.png"
+import AgencyCa4 from "../../assets/blog/FireShot Capture 070 - Netxt.js 14 Homepage - localhost.png"
+import AgencyCa5 from "../../assets/blog/FireShot Capture 071 - sunt aut facere repellat provident occaecati excepturi optio reprehen_ - localhost.png"
 import { motion } from 'framer-motion';
 import { RevealTwo } from '../test/reveal two';
 
@@ -90,7 +107,9 @@ interface ProductDetailsProps {
     PhotoCarrosel3: string;
     PhotoCarrosel4: string;
     PhotoCarrosel5: string;
-    PhotoCarrosel6: string;     
+    PhotoCarrosel6: string;
+    PhotoCarrosel7: string;
+    PhotoCarrosel8: string;
     textcarrosel: string;
     totalSlide: number;
   };
@@ -103,6 +122,79 @@ export const product: ProductDetailsProps['product'][] =
   [
     {
       id: 0,
+      heroPhoto: BarbershopHero,
+      heroPhotoClass: 'classeHerophoto0',
+      title: 'Barber Shop',
+      subText: 'Esta é uma aplicação web desenvolvida com Next JS e Postgres.',
+      subText2: 'Esta é uma aplicação para que clientes possam agendar um horário em sua barbearia preferida pelo celular.',
+      infoEnd: 'https://github.com/gleibercoelho/barbershop',
+      infoRepo: 'https://barbershop-virid.vercel.app/',
+      infoTechs: (<div><p>
+
+        <FaReact />
+        <SiNextdotjs />
+        <DiPostgresql />
+        <SiPrisma />
+        <RiSupabaseLine />
+        <SiTailwindcss />
+        <SiTypescript />
+        <IoLogoJavascript />
+        <FaHtml5 />
+        <FaCss3Alt />
+      </p></div>),
+      bodyPhoto: BarbershopBody,
+      bodyPhotoClass: 'classe-da-foto-corpo',
+      textSide: 'Esta aplicação serve como um catálogo de barbearias para que clientes encontrem diversos serviços e agendem um horario em dos estabelecimentos.',
+      textBottom: 'Uma barbearia pode oferecer diversos serviços, como corte de cabelo, barba, sombrancelha, entre outros. Os clientes podem agendar diretamente um serviço na aplicação que pode ajudar o dono do estabelecimento a se programar parar oferecer este serviço.',
+      PhotoCarrosel1: BarbershopCa1,
+      PhotoCarrosel2: BarbershopCa2,
+      PhotoCarrosel3: BarbershopCa3,
+      PhotoCarrosel4: BarbershopCa4,
+      PhotoCarrosel5: BarbershopCa5,
+      PhotoCarrosel6: BarbershopCa6,
+      PhotoCarrosel7: BarbershopCa7,
+      PhotoCarrosel8: BarbershopCa8,
+
+
+      textcarrosel: 'Todos os serviços sao registrados no banco de dados utlizando o Prisma e Postgres. A autenticação na aplicação e feita com Google e OAuth que oferecem seguranca na autencicação.',
+      totalSlide: 8,
+    },
+    {
+      id: 1,
+      heroPhoto: AgencyHero,
+      heroPhotoClass: 'classeHerophoto0',
+      title: 'Agency & Marketing',
+      subText: 'Esta é um site desenvolvido com Next Js  e React JS',
+      subText2: 'Este site foi desenvolvido para uma agência de marketing que possue seu próprio blog e possível saber novidades sobre a empresa e sobre os suas últimas criações.',
+      infoEnd: 'https://gleiber-blog.vercel.app/',
+      infoRepo: 'https://github.com/gleibercoelho/Blog-Next',
+      infoTechs: (<div><p>
+        <SiNextdotjs />
+        <FaReact />
+        <SiMongodb />
+        <IoLogoJavascript />
+        <FaHtml5 />
+        <FaCss3Alt />
+        </p></div>),
+      bodyPhoto: AgencyBody,
+      bodyPhotoClass: 'classe-da-foto-corpo',
+      textSide: 'Este site foi desenvolvido com Next Js que otimiza a renderização do site e das imagens para o cliente, para dispositivos low-end e para situações de baixa qualidade de internet.',
+      textBottom: 'A tecnologia do Next js possibilita uma pre-renderização dos componentes do site, pois faz uma redenrização primeiro no server side, diminuindo o trabalho que os navegadores tem para exibir a página para usuário final.',
+      PhotoCarrosel1: AgencyCa1,
+      PhotoCarrosel2: AgencyCa2,
+      PhotoCarrosel3: AgencyCa3,
+      PhotoCarrosel4: AgencyCa4,
+      PhotoCarrosel5: AgencyCa5,
+      PhotoCarrosel6: "url-da-foto-6",
+      PhotoCarrosel7: 'url-da-foto-7',
+      PhotoCarrosel8: 'url-da-foto-8',
+
+
+      textcarrosel: 'Os post do blog são unicos e foram adicionados usando API que mocka, ou seja, cria os elementos para que possam ser alimentados e gerados na página.',
+      totalSlide: 5,
+    },
+    {
+      id: 2,
       heroPhoto: gadgetsHero,
       heroPhotoClass: 'classeHerophoto0',
       title: 'Mercado de Gadgets. ',
@@ -129,13 +221,15 @@ export const product: ProductDetailsProps['product'][] =
       PhotoCarrosel4: gadgetsCa4,
       PhotoCarrosel5: gadgetsCa5,
       PhotoCarrosel6: gadgetsCa6,
-      
-      
+      PhotoCarrosel7: 'url-da-foto-7',
+      PhotoCarrosel8: 'url-da-foto-8',
+
+
       textcarrosel: 'O site também conta com painel de controle para o administrador verificar todos os produtos cadastrados, classes de produtos, usuários cadastrados, pedidos feitos. O painel foi desenvolvido para o usuário administrador realizar toda gestão do site sem precisar programar.',
       totalSlide: 5,
     },
     {
-      id: 1,
+      id: 3,
       heroPhoto: ggwpHero,
       heroPhotoClass: 'classeHerophoto0',
       title: 'GG-WP',
@@ -162,13 +256,15 @@ export const product: ProductDetailsProps['product'][] =
       PhotoCarrosel4: 'url-da-foto-4',
       PhotoCarrosel5: 'url-da-foto-5',
       PhotoCarrosel6: 'url-da-foto-6',
-      
-      
+      PhotoCarrosel7: 'url-da-foto-7',
+      PhotoCarrosel8: 'url-da-foto-8',
+
+
       textcarrosel: 'Para ser elegível a uma das chaves da Riot Games que possibilita a consulta de dados das APIs em grande escala é necessário colocar camadas de proteção desta chave token de acesso. Para isso ser possível foi necessário criar um servidor intermediário no back end para receber as requisições do navegador e enviar para o servidor da Riot e retornar apenas os dados solicitados pelo usuário.',
       totalSlide: 3,
     },
     {
-      id: 2,
+      id: 4,
       heroPhoto: soundgardenHero,
       heroPhotoClass: 'classeHerophoto0',
       title: 'Sound Garden',
@@ -192,13 +288,15 @@ export const product: ProductDetailsProps['product'][] =
       PhotoCarrosel4: 'url-da-foto-4',
       PhotoCarrosel5: 'url-da-foto-5',
       PhotoCarrosel6: 'url-da-foto-6',
-      
-      
+      PhotoCarrosel7: 'url-da-foto-7',
+      PhotoCarrosel8: 'url-da-foto-8',
+
+
       textcarrosel: 'O back end desse site foi fornecido pela Gama Academy durante meu curso de front end e infelizmente nao esta mais disponível; imposibilitando visualizar todas as propriedades do site.',
       totalSlide: 1,
     },
     {
-      id: 3,
+      id: 5,
       heroPhoto: codeleapHero,
       heroPhotoClass: 'classeHerophoto0',
       title: 'Codeleap',
@@ -225,13 +323,15 @@ export const product: ProductDetailsProps['product'][] =
       PhotoCarrosel4: 'url-da-foto-4',
       PhotoCarrosel5: 'url-da-foto-5',
       PhotoCarrosel6: 'url-da-foto-6',
-      
-      
+      PhotoCarrosel7: 'url-da-foto-7',
+      PhotoCarrosel8: 'url-da-foto-8',
+
+
       textcarrosel: 'A session storage e o Redux foram combinados porque esse site foi imaginado para acessos recorrentes ao longo do dia. Dessa forma é possível o usuário continuar logado e voltar a página que estava lendo sem precisar relogar',
       totalSlide: 1,
     },
     {
-      id: 4,
+      id: 6,
       heroPhoto: dindinHero,
       heroPhotoClass: 'classeHerophoto0',
       title: 'Dindin',
@@ -255,13 +355,15 @@ export const product: ProductDetailsProps['product'][] =
       PhotoCarrosel4: dindinCa4,
       PhotoCarrosel5: 'url-da-foto-5',
       PhotoCarrosel6: 'url-da-foto-6',
-      
-      
+      PhotoCarrosel7: 'url-da-foto-7',
+      PhotoCarrosel8: 'url-da-foto-8',
+
+
       textcarrosel: 'Que tal aprender sobre educação financeira?',
       totalSlide: 4,
     },
     {
-      id: 5,
+      id: 7,
       heroPhoto: pompomHero,
       heroPhotoClass: 'classeHerophoto0',
       title: 'Pompom',
@@ -285,13 +387,15 @@ export const product: ProductDetailsProps['product'][] =
       PhotoCarrosel4: pompomCa4,
       PhotoCarrosel5: 'url-da-foto-5',
       PhotoCarrosel6: 'url-da-foto-6',
-      
-      
+      PhotoCarrosel7: 'url-da-foto-7',
+      PhotoCarrosel8: 'url-da-foto-8',
+
+
       textcarrosel: 'Quer saber da próxima live ou rever a última? Vem pra cá',
       totalSlide: 4,
     },
     {
-      id: 6,
+      id: 9,
       heroPhoto: netflixHero,
       heroPhotoClass: 'classeHerophoto0',
       title: 'Netflix Clone',
@@ -316,13 +420,15 @@ export const product: ProductDetailsProps['product'][] =
       PhotoCarrosel4: 'url-da-foto-4',
       PhotoCarrosel5: 'url-da-foto-5',
       PhotoCarrosel6: 'url-da-foto-6',
-      
-      
+      PhotoCarrosel7: 'url-da-foto-7',
+      PhotoCarrosel8: 'url-da-foto-8',
+
+
       textcarrosel: 'Este tipo de biblioteca e amplamente usado por programadores para acelerar o processo de criação. ',
       totalSlide: 1,
     },
     {
-      id: 7,
+      id: 10,
       heroPhoto: pokedexHero,
       heroPhotoClass: 'classeHerophoto0',
       title: 'Pokedex',
@@ -346,8 +452,10 @@ export const product: ProductDetailsProps['product'][] =
       PhotoCarrosel4: pokedexCa4,
       PhotoCarrosel5: 'url-da-foto-5',
       PhotoCarrosel6: 'url-da-foto-6',
-      
-      
+      PhotoCarrosel7: 'url-da-foto-7',
+      PhotoCarrosel8: 'url-da-foto-8',
+
+
       textcarrosel: 'Conheça todos os monstros da primeira temporada do anime',
       totalSlide: 4,
     },
@@ -376,13 +484,15 @@ export const product: ProductDetailsProps['product'][] =
       PhotoCarrosel4: cafeCa4,
       PhotoCarrosel5: cafeCa5,
       PhotoCarrosel6: cafeCa6,
-      
-      
+      PhotoCarrosel7: 'url-da-foto-7',
+      PhotoCarrosel8: 'url-da-foto-8',
+
+
       textcarrosel: 'Conheça e aprenda a fazer as últimas receitas mais deliciosas no nosso blog.',
       totalSlide: 6,
     },
     {
-      id: 10,
+      id: 11,
       heroPhoto: mechHero,
       heroPhotoClass: 'classeHerophoto0',
       title: 'Mech Oficina',
@@ -410,13 +520,15 @@ export const product: ProductDetailsProps['product'][] =
       PhotoCarrosel4: 'url-da-foto-4',
       PhotoCarrosel5: 'url-da-foto-5',
       PhotoCarrosel6: 'url-da-foto-6',
-      
-      
+      PhotoCarrosel7: 'url-da-foto-7',
+      PhotoCarrosel8: 'url-da-foto-8',
+
+
       textcarrosel: 'Este site pode atender facilmente uma pequena loja e realizar seus controles de vendas e estoque.',
       totalSlide: 2,
     },
     {
-      id: 9,
+      id: 12,
       heroPhoto: ommaHero,
       heroPhotoClass: 'classeHerophoto0',
       title: 'Omma',
@@ -440,13 +552,15 @@ export const product: ProductDetailsProps['product'][] =
       PhotoCarrosel4: 'url-da-foto-4',
       PhotoCarrosel5: 'url-da-foto-5',
       PhotoCarrosel6: 'url-da-foto-6',
-      
-      
+      PhotoCarrosel7: 'url-da-foto-7',
+      PhotoCarrosel8: 'url-da-foto-8',
+
+
       textcarrosel: 'Conheça e aprenda a fazer as últimas receitas mais deliciosas no nosso site.',
       totalSlide: 3,
     },
     {
-      id: 11,
+      id: 13,
       heroPhoto: lavieBody,
       heroPhotoClass: 'classeHerophoto0',
       title: 'La Vie',
@@ -473,8 +587,10 @@ export const product: ProductDetailsProps['product'][] =
       PhotoCarrosel4: 'url-da-foto-4',
       PhotoCarrosel5: 'url-da-foto-5',
       PhotoCarrosel6: 'url-da-foto-6',
-      
-      
+      PhotoCarrosel7: 'url-da-foto-7',
+      PhotoCarrosel8: 'url-da-foto-8',
+
+
       textcarrosel: 'O sistema foi criado com um administrador que pode criar cadastro de novos psicólogos com seu login e senha.',
       totalSlide: 1,
     },
@@ -503,70 +619,13 @@ export const product: ProductDetailsProps['product'][] =
       PhotoCarrosel4: 'url-da-foto-4',
       PhotoCarrosel5: 'url-da-foto-5',
       PhotoCarrosel6: 'url-da-foto-6',
+      PhotoCarrosel7: 'url-da-foto-7',
+      PhotoCarrosel8: 'url-da-foto-8',
       
       
       textcarrosel: 'O sitema foi criado com um adminstrador que pode criar cadastro de novos psicologos com seu login e senha.',
     }, */
-    {
-      id: 13,
-      heroPhoto: APIFeriadoHero,
-      heroPhotoClass: 'classeHerophoto0',
-      title: 'API de Feriados',
-      subText: 'Esta é uma aplicação web desenvolvida com HTML e Javascript',
-      subText2: 'Neste site é possível consultar todos feriados nacionais de um ano. Basta digitar o ano e buscar pelos feriados.',
-      infoEnd: 'https://gleibercoelho.github.io/API-Feriados-Nacionais/',
-      infoRepo: 'https://github.com/gleibercoelho/API-Feriados-Nacionais',
-      infoTechs: (<div><p>
-
-        <IoLogoJavascript />
-        <FaHtml5 />
-        <FaCss3Alt />
-      </p></div>),
-      bodyPhoto: APIFeriadoHero,
-      bodyPhotoClass: 'classe-da-foto-corpo',
-      textSide: 'APIs são criadas a partir de servidores que fornecem determinados dados quando você se conecta com eles de forma correta.',
-      textBottom: 'Apesar de simples, essa aplicação pode ser facilmente incorporada a outros sites e ser usados de forma automática em uma página ou através de requisições do usuário.',
-      PhotoCarrosel1: APIFeriadoHero,
-      PhotoCarrosel2: 'url-da-foto-2',
-      PhotoCarrosel3: 'url-da-foto-3',
-      PhotoCarrosel4: 'url-da-foto-4',
-      PhotoCarrosel5: 'url-da-foto-5',
-      PhotoCarrosel6: 'url-da-foto-6',
-      
-      
-      textcarrosel: 'Quando configuradas de forma correta, o front end traz informações diretamente de um back end através da API',
-      totalSlide: 1,
-    },
-    {
-      id: 12,
-      heroPhoto: APICEPHero,
-      heroPhotoClass: 'classeHerophoto0',
-      title: 'API de Endereços',
-      subText: 'Esta é uma aplicação web desenvolvida com HTML e Javascript',
-      subText2: 'Neste site e possível consultar todos os endereços nacionais através do CEP. Basta digitar o CEP e o site vai retornas demais informações do endereço como bairro, cidade e nome da rua.',
-      infoEnd: 'https://gleibercoelho.github.io/API-Feriados-Nacionais/',
-      infoRepo: 'https://github.com/gleibercoelho/API-Feriados-Nacionais',
-      infoTechs: (<div><p>
-
-        <IoLogoJavascript />
-        <FaHtml5 />
-        <FaCss3Alt />
-      </p></div>),
-      bodyPhoto: APICEPHero,
-      bodyPhotoClass: 'classe-da-foto-corpo',
-      textSide: 'APIs são criadas a partir de servidores que fornecem determinados dados quando você se conecta com eles de forma correta.',
-      textBottom: 'apesar de simples essa aplicação pode ser facilmente incorporado a outros sites e ser usados de forma automática em uma página ou através de requisições do usuário.',
-      PhotoCarrosel1: APICEPHero,
-      PhotoCarrosel2: 'url-da-foto-2',
-      PhotoCarrosel3: 'url-da-foto-3',
-      PhotoCarrosel4: 'url-da-foto-4',
-      PhotoCarrosel5: 'url-da-foto-5',
-      PhotoCarrosel6: 'url-da-foto-6',
-      
-      
-      textcarrosel: 'Quando confiuradas de forma correta o front end traz informacoes diretamente de um back end atraves da API',
-      totalSlide: 1,
-    },
+    
     // Adicione outros produtos conforme necessário
   ];
 

@@ -211,11 +211,13 @@ export const MainCardBox = styled.div`
             width: 100%; 
 
              h1{
-            font-size: 40px !important; 
+                position: relative;
+            font-size: 35px !important; 
             left: 30px;
-            line-height: 100px;
+            line-height: 50px !important;
             width: 380px !important;
-            top: 50px;
+            top: 80px !important;
+            
             }          
             .caixa {           
            /*  left: 70px;
