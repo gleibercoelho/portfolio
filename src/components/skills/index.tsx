@@ -1,4 +1,4 @@
-import { FaHtml5, FaCss3Alt, FaReact, FaSass, FaAngular, FaVuejs, FaBootstrap} from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaReact, FaSass, FaVuejs, FaBootstrap} from "react-icons/fa";
 import { FaNodeJs } from "react-icons/fa6";
 import { IoLogoJavascript } from "react-icons/io5";
 import { DiPostgresql } from "react-icons/di";

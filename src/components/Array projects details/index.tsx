@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import { FaHtml5, FaCss3Alt, FaReact, FaGithub, FaCode, FaBootstrap, FaSass, FaLink, FaArrowLeft, FaArrowRight } from "react-icons/fa";
-import { FaNodeJs, FaMagnifyingGlassPlus } from "react-icons/fa6";
+import { FaHtml5, FaCss3Alt, FaReact, FaGithub, FaBootstrap, FaSass, FaLink, FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { FaNodeJs } from "react-icons/fa6";
 import { IoLogoJavascript } from "react-icons/io5";
 import { DiPostgresql } from "react-icons/di";
 import { SiRedux, SiStyledcomponents, SiTypescript, SiMongodb, SiNextdotjs, SiPrisma, SiTailwindcss } from "react-icons/si";
