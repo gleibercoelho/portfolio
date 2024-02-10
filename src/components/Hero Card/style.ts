@@ -213,7 +213,7 @@ export const MainCardBox = styled.div`
              h1{
                 position: relative;
             font-size: 35px !important; 
-            left: 30px;
+            left: 0px;
             line-height: 50px !important;
             width: 380px !important;
             top: 80px !important;

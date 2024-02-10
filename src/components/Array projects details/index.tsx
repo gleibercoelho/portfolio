@@ -77,7 +77,7 @@ import BarbershopCa5 from "../../assets/barbershop/FireShot Capture 078 - Create
 import BarbershopCa6 from "../../assets/barbershop/FireShot Capture 079 - Create Next App - barbershop-virid.vercel.app.png"
 import BarbershopCa7 from "../../assets/barbershop/FireShot Capture 081 - Create Next App - barbershop-virid.vercel.app.png"
 import BarbershopCa8 from "../../assets/barbershop/FireShot Capture 082 - Create Next App - barbershop-virid.vercel.app.png"
-import AgencyHero from "../../assets/blog/FireShot Capture 067 - Netxt.js 14 Homepage - localhost.png"
+import AgencyHero from "../../assets/blog/about.png"
 import AgencyBody from "../../assets/blog/FireShot Capture 067 - Netxt.js 14 Homepage - localhost.png"
 import AgencyCa1 from "../../assets/blog/FireShot Capture 067 - Netxt.js 14 Homepage - localhost.png"
 import AgencyCa2 from "../../assets/blog/FireShot Capture 068 - About Page - Next.js 14 - localhost.png"
@@ -127,8 +127,8 @@ export const product: ProductDetailsProps['product'][] =
       title: 'Barber Shop',
       subText: 'Esta é uma aplicação web desenvolvida com Next JS e Postgres.',
       subText2: 'Esta é uma aplicação para que clientes possam agendar um horário em sua barbearia preferida pelo celular.',
-      infoEnd: 'https://github.com/gleibercoelho/barbershop',
-      infoRepo: 'https://barbershop-virid.vercel.app/',
+      infoEnd: 'https://barbershop-virid.vercel.app/',
+      infoRepo: 'https://github.com/gleibercoelho/barbershop',
       infoTechs: (<div><p>
 
         <FaReact />

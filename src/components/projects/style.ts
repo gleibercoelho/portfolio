@@ -641,7 +641,10 @@ svg{
      }
     }
     .secretDiv{
-      background-image: linear-gradient(to right, #00255c, #003f71, #005675, #006b6a, #007d58);
+      background-image: linear-gradient(to right, #005675, #006b6a, #007d58);
+        .carousel img{
+        display: none
+   }
     }
   }
     .RightProjects{
@@ -698,16 +701,18 @@ svg{
      }
     }
     .secretDiv{
-      background-image: linear-gradient(to right, #00255c, #25183f, #250f26, #1b0813, #000000);
+      background-image: linear-gradient(to right, #250f26, #1b0813, #000000);
       color: #D0A616;
-     
+       .carousel img{
+        display: none
+   }
     }
   }
     .secretDiv {
       overflow: visible;
       height: 400px;
       color: #D0A616 !important;  
-     
+    
      
         .secretDivRow{
 
@@ -756,30 +761,7 @@ svg{
              }
             }
            
-            .carousel{
-              height: 400px;
-              z-index: 2 !important;
-              right: 0;
-              background-color: pink;
-              
-              .slide.active.SheillaSecretOne {
-   
-                  left: -20px;
-                  bottom: -250px;
-                }
-            .slide.active.SheillaSecretTwo {
-              
-              left: -50px;
-              bottom: -225px;
-            
-            }
-            .slide.active.SheillaSecretThree {
-
-              left: -10px;
-              bottom: -100px;
-              
-            }
-        }
+           
      }
   }
 }
