@@ -52,33 +52,32 @@ import { useState } from 'react';
 import { useTranslation } from "react-i18next";
 
 export default function CustomizedSwitches() {
+  const { t, i18n } = useTranslation('global');
+  const [switchPosition, setSwitchPosition] = useState(i18n.language === 'pt');
 
-   
-
-    const [t, i18n] = useTranslation("global");
-    const [switchPosition, setSwitchPosition] = useState(i18n.language === 'pt');
-  
-    const handleChangeLanguage = () => {
-      const newLang = i18n.language === 'pt' ? 'en' : 'pt';
-      i18n.changeLanguage(newLang);
-      setSwitchPosition(!switchPosition);
-    }
-  
-    return (
-      <FormGroup style={{ display: "flex", flexDirection: "row" }}>
-        <img src={EUA} width={30} style={{ objectFit: "contain", marginRight: "20px" }} />
-        <FormControlLabel
-          onClick={handleChangeLanguage}
-          control={
-            <MaterialUISwitch
-              sx={{ m: 1 }}
-              checked={switchPosition}
-            />
-          }
-          label=""
-        />
-        <img src={BRA} width={30} style={{ objectFit: "contain" }} />
-      </FormGroup>
-    );
+  const handleChangeLanguage = () => {
+    const newLang = i18n.language === 'pt' ? 'en' : 'pt';
+    i18n.changeLanguage(newLang);
+    setSwitchPosition(!switchPosition);
   }
+
+  
+  
+  return (
+    <FormGroup style={{ display: "flex", flexDirection: "row" }}>
+      <img src={EUA} width={30} style={{ objectFit: "contain", marginRight: "20px" }} />
+      <FormControlLabel
+        onClick={handleChangeLanguage}
+        control={
+          <MaterialUISwitch
+            sx={{ m: 1 }}
+            checked={switchPosition}
+          />
+        }
+        label=""
+      />
+      <img src={BRA} width={30} style={{ objectFit: "contain" }} />
+    </FormGroup>
+  );
+}
 

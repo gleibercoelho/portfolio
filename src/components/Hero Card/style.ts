@@ -174,7 +174,8 @@ export const MainCardBox = styled.div`
             .title{
                 h1{
            font-size: 60px;
-           width: 600px;     
+           width: 500px;
+           white-space: wrap;     
         }}
         .caixa {
             img{
