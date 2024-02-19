@@ -154,6 +154,12 @@
             "text3": "O servidor foi desenvolvido com autenticação de token JWT de modo o registro do médico seja registrado.",
             "text4": "O mesmo paciente pode ter vários prontuários de atendimento no qual são registrados os médicos que fizeram seu atendimento.",
             "text5": "O sistema foi criado com um administrador que pode criar cadastro de novos psicólogos com seu login e senha."
-        }      
+        },      
+        "back": "Anterior",        
+        "next": "Próximo",
+        "project": "Projetos",
+        "site": "Site",
+        "git": "Repositório"
+
 }
 }

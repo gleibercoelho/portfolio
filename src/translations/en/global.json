@@ -154,6 +154,11 @@
             "text3": "The server is designed with JWT token authentication so that the doctor's record is recorded.",
             "text4": "The same patient may have several care records in which the doctors who provided care are recorded.",
             "text5": "The system was created with an administrator who can create a register for new psychologists with their login and password."
-        }      
+        },      
+        "back": "Back",        
+        "next": "Next",
+        "project": "Projects",
+        "site": "Website",
+        "git": "repository"
 }
 }

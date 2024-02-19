@@ -126,7 +126,7 @@ export const product: ProductDetailsProps['product'][] =
       heroPhoto: BarbershopHero,
       heroPhotoClass: 'classeHerophoto0',
       title: 'Barber Shop',
-      subText: "t(details.project0.text1)",
+      subText: 'Esta é uma aplicação web desenvolvida com Next JS e Postgres.',
       subText2: 'Esta é uma aplicação para que clientes possam agendar um horário em sua barbearia preferida pelo celular.',
       infoEnd: 'https://barbershop-virid.vercel.app/',
       infoRepo: 'https://github.com/gleibercoelho/barbershop',
@@ -632,7 +632,7 @@ export const product: ProductDetailsProps['product'][] =
 
 const ProductDetails: React.FC<ProductDetailsProps> = ({ product }) => {
   const [index, setIndex] = useState(0);
-
+  const [t] = useTranslation("global");
 
 
   const handleSelect = (selectedIndex: any) => {
@@ -680,14 +680,14 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({ product }) => {
         <div className='infoDiv'>
           <div>
             <h1>{product.title}</h1>
-            <h2>{product.subText}</h2>
+            <h2>{t(`details.project${product.id}.text1`)}</h2>
           </div>
           <div className='subtextDiv'>
-            <p>{product.subText2}</p>
+            <p>{t(`details.project${product.id}.text2`)}</p>
           </div>
           <div className='infoEnd'>
-            <p>Site: <Link to={product.infoEnd} target="_blank" ><FaLink /></Link></p>
-            <p>Repositorio <Link to={product.infoRepo} target="_blank" ><FaGithub /></Link></p>
+            <p>{t("details.site")}: <Link to={product.infoEnd} target="_blank" ><FaLink /></Link></p>
+            <p>{t("details.git")}: <Link to={product.infoRepo} target="_blank" ><FaGithub /></Link></p>
             <p>Techs: {product.infoTechs}</p>
           </div>
         </div>
@@ -696,10 +696,10 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({ product }) => {
         <div className='bodyDiv'>
           <div>
             <img src={product.bodyPhoto} alt="" className={product.bodyPhotoClass} />
-            <p className='pBottom'>{product.textBottom}</p>
+            <p className='pBottom'>{t(`details.project${product.id}.text4`)}</p>
           </div>
           <div>
-            <p>{product.textSide}</p>
+            <p>{t(`details.project${product.id}.text3`)}</p>
           </div>
         </div>
       </RevealTwo>
@@ -717,16 +717,16 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({ product }) => {
             ))}
           </div>
 
-          <p>{product.textcarrosel}</p>
+          <p>{t(`details.project${product.id}.text5`)}</p>
         </div>
       </RevealTwo>
       <div className='links'>
         <Link to={product.id === 0 ? '#' : `/projects/${product.id - 1}`} onClick={() => handleLinkClick(`/projects/${product.id - 1}`)}>
-          <FaArrowLeft /> Anterior
+          <FaArrowLeft /> {t("details.back")}
         </Link>
-        <Link to="/projects" onClick={() => handleLinkClick('/projects')}>Projetos</Link>
+        <Link to="/projects" onClick={() => handleLinkClick('/projects')}>{t("details.project")}</Link>
         <Link to={product.id === 13 ? '#' : `/projects/${product.id + 1}`} onClick={() => handleLinkClick(`/projects/${product.id + 1}`)} >
-          Próximo <FaArrowRight />
+        {t("details.next")} <FaArrowRight />
         </Link>
 
       </div>
