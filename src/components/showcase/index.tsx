@@ -17,10 +17,11 @@ import LavieHero from "../../assets/La Vie/0_MNVJq_8e0SJoqZb5.jpg"
 import { Link } from "react-router-dom";
 import { RevealTwo } from "../test/reveal two";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const Showcase = () => {
 
-
+    const [t] = useTranslation("global");
     return (
        
         <ShowcaseBox>
@@ -28,7 +29,7 @@ const Showcase = () => {
                  initial={{ opacity: 0, x: -100 }}
                  animate={{ opacity: 1, x: 0 }}
                  transition={{ duration: 1, delay: .75 }}
-                 >Projetos</motion.h1>
+                 > {t("showcase.title")}</motion.h1>
             <RevealTwo>
             <div className="box">
                

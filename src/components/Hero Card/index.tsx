@@ -3,9 +3,12 @@ import photo from "../../assets/Captura de tela 2023-01-05 012557.png"
 import { useEffect, useState } from 'react';
 import { useSpring, animated } from 'react-spring';
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
+
 
 const MainCard = () => {
 
+    const [t] = useTranslation("global");
 
     useEffect(() => {
         const position = document.documentElement;
@@ -97,7 +100,7 @@ const MainCard = () => {
                     transition={{ duration: 1, delay: .75 }}
                  className="title" >
                 <h1>
-                    Front-End Desenvolvedor
+                    {t("home.body")}
                 </h1>
                 </motion.div>
                 <motion.div

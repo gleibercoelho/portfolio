@@ -1,17 +1,20 @@
-import  { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { FiMenu, FiX, FiChevronsRight } from 'react-icons/fi';
 import { FaHome } from 'react-icons/fa';
 import { HeaderBox } from './style.';
 import { Link } from 'react-router-dom';
-
-
+import CustomizedSwitches from '../../switch';
+import { useTranslation } from "react-i18next";
 
 
 
 // ... (importações omitidas para brevidade)
 
 const Header = () => {
+
  
+
+  const [t] = useTranslation("global");
   const [isOpen, setIsOpen] = useState(false);
   const [showActive, setShowActive] = useState(false);
   const [showNewActive, setShowNewActive] = useState(false);
@@ -74,7 +77,7 @@ const Header = () => {
     <HeaderBox>
       <h1>Gleiber Coelho</h1>
       <div className="menu-icon" onClick={toggleMenu}>
-        <FiMenu/>
+        <FiMenu />
       </div>
       {isOpen && (
         <div className={`toast-menu ${showActive && 'active'}`}>
@@ -91,26 +94,28 @@ const Header = () => {
             <li>
               <Link to="/projects" onClick={() => handleLinkClick('/projects')}>
                 <FiChevronsRight color="black" />
-                Projetos
+                {t("header.project")}
               </Link>
             </li>
             <li>
               <Link to="/about" onClick={() => handleLinkClick('/about')}>
                 <FiChevronsRight color="black" />
-                Sobre
+                {t("header.about")}
               </Link>
             </li>
             <li>
               <Link to="/contact" onClick={() => handleLinkClick('/contact')}>
                 <FiChevronsRight color="black" />
-                Contato
+                {t("header.contact")}
               </Link>
             </li>
           </ul>
         </div>
       )}
-
-      <h2>{horarioAtual.toLocaleTimeString()}</h2>
+      <div className='testingdiv'>
+        <h2>{horarioAtual.toLocaleTimeString()}</h2>
+        <CustomizedSwitches />
+      </div>
     </HeaderBox>
   );
 };

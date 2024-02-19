@@ -70,12 +70,16 @@ hr{
     flex-direction: row;
     justify-content: space-around;
     white-space: wrap;
+    wi
     p{
     color: #E8D5B5;
-    font-size: 24px;
+    font-size: 20px;
+    width: 60%;
+    text-justify: left !important;
 
     span{
         color: #B872EA;
+        text-justify: left !important;
     }
 }
 
@@ -83,6 +87,7 @@ hr{
 .gridColumnOne{
     display: flex;
     flex-direction: column;
+    width: 50%;
 
 }
 .gridColumnTwo{
@@ -129,6 +134,12 @@ hr{
             flex-direction: column;
             padding-left: 20px;
         padding-right: 20px;
+        p{
+            width: 100%
+        }
+
+        .gridColumnOne{
+            width: 100%;
         }
 
     }

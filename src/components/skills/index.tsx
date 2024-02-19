@@ -8,13 +8,13 @@ import { TbBrandFramerMotion } from "react-icons/tb";
 import { AboutBox } from "./style";
 import { RevealTwo } from "../test/reveal two";
 import { RiSupabaseLine } from "react-icons/ri";
-
+import { useTranslation } from "react-i18next";
 
 
 
 const Skills = () => {
 
-  
+  const [t] = useTranslation("global");
 
   return (
     <AboutBox>
@@ -34,7 +34,7 @@ const Skills = () => {
             <p><FaVuejs /> Vue Js *</p>
             </div>
           <div className="boxes">
-            <h2>Estilização</h2>
+            <h2>{t("skills.title")}</h2>
             <p><TbBrandFramerMotion /> Framer Motion</p>
             <p><SiStyledcomponents/> Styled Components</p>
             <p><FaSass/> Sass</p>
@@ -54,7 +54,7 @@ const Skills = () => {
             <p><SiPrisma />Prisma</p>
             <p><RiSupabaseLine />Supabase</p>
 
-            <p className="eight">* aprendendo atualmente</p>
+            <p className="eight">{t("skills.footer")}</p>
             </div>
            
       </section>

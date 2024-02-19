@@ -30,12 +30,13 @@ import AgenciaTwo from "../../assets/blog/FireShot Capture 068 - About Page - Ne
 import AgenciaThree from "../../assets/blog/FireShot Capture 070 - Netxt.js 14 Homepage - localhost.png"
 import { Reveal } from "../../components/test";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 
 
 const Projects = () => {
 
-
+  const [t] = useTranslation("global");
 
 
 
@@ -180,8 +181,8 @@ const Projects = () => {
           <FaCss3Alt />
         </div>
       ),
-      secretText: "Barber Shop é um site desenvolvido para que clientes possam marcar um horário na sua barbearia preferida do seu próprio celular.",
-      secretTextAcess: (<div className="AcessDois"><div><Link to="/projects/0"><FaMagnifyingGlassPlus /> <p> mais detalhes</p></Link></div> <div><Link to="https://github.com/gleibercoelho/barbershop" target="_blank" ><FaGithub /><p>GitHub</p></Link></div><div><Link to="https://barbershop-virid.vercel.app/" target="_blank"><FaCode /><p>acessar site</p></Link></div></div>),
+      secretText: `${t("projects.barber")}`,
+      secretTextAcess: (<div className="AcessDois"><div><Link to="/projects/0"><FaMagnifyingGlassPlus /> <p>{t("projects.buttonDetails")}</p></Link></div> <div><Link to="https://github.com/gleibercoelho/barbershop" target="_blank" ><FaGithub /><p>GitHub</p></Link></div><div><Link to="https://barbershop-virid.vercel.app/" target="_blank"><FaCode /><p>{t("projects.buttonAcess")}</p></Link></div></div>),
       imageSrcSecretOne: Barbershop,
       imageSrcSecretTwo: BarbershopTwo,
       imageSrcSecretThree: BarbershopThree,
@@ -205,8 +206,8 @@ const Projects = () => {
           <FaCss3Alt />
         </div>
       ),
-      secretText: "Este projeto é site densenvolvido em Next Js para uma agência de mmarketing que possue seu próprio blog.",
-      secretTextAcess: (<div className="AcessDois"><div><Link to="/projects/1"><FaMagnifyingGlassPlus /> <p> mais detalhes</p></Link></div> <div><Link to="https://github.com/gleibercoelho/Blog-Next" target="_blank"><FaGithub /><p>GitHub</p></Link></div><div><Link to="https://gleiber-blog.vercel.app/" target="_blank"><FaCode /><p>acessar site</p></Link></div></div>),
+      secretText: `${t("projects.agency")}`,
+      secretTextAcess: (<div className="AcessDois"><div><Link to="/projects/1"><FaMagnifyingGlassPlus /> <p>{t("projects.buttonDetails")}</p></Link></div> <div><Link to="https://github.com/gleibercoelho/Blog-Next" target="_blank"><FaGithub /><p>GitHub</p></Link></div><div><Link to="https://gleiber-blog.vercel.app/" target="_blank"><FaCode /><p>{t("projects.buttonAcess")}</p></Link></div></div>),
       imageSrcSecretOne: Agencia,
       imageSrcSecretTwo: AgenciaTwo,
       imageSrcSecretThree: AgenciaThree,
@@ -230,8 +231,8 @@ const Projects = () => {
           <FaCss3Alt />
         </div>
       ),
-      secretText: "Comercio Gadgets é um projeto Full-Stack no qual eu desenvolvi o Fron end. Este é um e-commerce com experiência completa. ",
-      secretTextAcess: (<div className="AcessDois"><div><Link to="/projects/2"><FaMagnifyingGlassPlus /> <p> mais detalhes</p></Link></div> <div><Link to="https://github.com/gleibercoelho/Gama-XP-47-final" target="_blank"><FaGithub /><p>GitHub</p></Link></div><div><Link to="#"><FaCode /><p>acessar site</p></Link></div></div>),
+      secretText: `${t("projects.gadgets")}`,
+      secretTextAcess: (<div className="AcessDois"><div><Link to="/projects/2"><FaMagnifyingGlassPlus /> <p>{t("projects.buttonDetails")}</p></Link></div> <div><Link to="https://github.com/gleibercoelho/Gama-XP-47-final" target="_blank"><FaGithub /><p>GitHub</p></Link></div><div><Link to="#"><FaCode /><p>{t("projects.buttonAcess")}</p></Link></div></div>),
       imageSrcSecretOne: EcommerceTwo,
       imageSrcSecretTwo: EcommerceThree,
       imageSrcSecretThree: Ecommerce,
@@ -256,8 +257,8 @@ const Projects = () => {
           <FaCss3Alt />
         </div>
       ),
-      secretText: "GG-WP é um Web-aplicativo Full-Stack que busca os status de partida dos jogadores de league of legends do mundo inteiro.",
-      secretTextAcess: (<div className="AcessDois"><div><Link to="/projects/3"><FaMagnifyingGlassPlus /> <p> mais detalhes</p></Link></div> <div><Link to="#"><FaGithub /><p>GitHub</p></Link></div><div><Link to="https://www.gg-wp.info/" target="_blank"><FaCode /><p>acessar site</p></Link></div></div>),
+      secretText: `${t("projects.ggwp")}`,
+      secretTextAcess: (<div className="AcessDois"><div><Link to="/projects/3"><FaMagnifyingGlassPlus /> <p>{t("projects.buttonDetails")}</p></Link></div> <div><Link to="#"><FaGithub /><p>GitHub</p></Link></div><div><Link to="https://www.gg-wp.info/" target="_blank"><FaCode /><p>{t("projects.buttonAcess")}</p></Link></div></div>),
       imageSrcSecretOne: GGWPThree,
       imageSrcSecretTwo: GGWPTwo,
       imageSrcSecretThree: GGWPOne,
@@ -276,8 +277,8 @@ const Projects = () => {
           <IoLogoJavascript /><FaBootstrap /><FaHtml5 /><FaCss3Alt />
         </div>
       ),
-      secretText: "Sound Garden é um site desenvolvido para uma grande empresa de eventos que mostra os pricipais shows que estão por vir.",
-      secretTextAcess: (<div className="AcessDois"><div><Link to="/projects/4"><FaMagnifyingGlassPlus /> <p> mais detalhes</p></Link></div> <div><Link to="https://github.com/gleibercoelho/soundgarden-front" target="_blank"><FaGithub /><p>GitHub</p></Link></div><div><Link to="https://gleibercoelho.github.io/soundgarden-front/" target="_blank"><FaCode /><p>acessar site</p></Link></div></div>),
+      secretText: `${t("projects.soungg")}`,
+      secretTextAcess: (<div className="AcessDois"><div><Link to="/projects/4"><FaMagnifyingGlassPlus /> <p>{t("projects.buttonDetails")}</p></Link></div> <div><Link to="https://github.com/gleibercoelho/soundgarden-front" target="_blank"><FaGithub /><p>GitHub</p></Link></div><div><Link to="https://gleibercoelho.github.io/soundgarden-front/" target="_blank"><FaCode /><p>{t("projects.buttonAcess")}</p></Link></div></div>),
       imageSrcSecretOne: SoundGarden,
       imageSrcSecretTwo: SoundGardenTwo,
       imageSrcSecretThree: SoundGardenThree,
@@ -301,8 +302,8 @@ const Projects = () => {
           <FaCss3Alt />
         </div>
       ),
-      secretText: "Codeleap é um serviço de microblog para publicar todas as suas ideias e pensamentos para o mundo",
-      secretTextAcess: (<div className="AcessDois"><div><Link to="/projects/5"><FaMagnifyingGlassPlus /> <p> mais detalhes</p></Link></div> <div><Link to="https://github.com/gleibercoelho/codeLeap" target="_blank"><FaGithub /><p>GitHub</p></Link></div><div><Link to="https://gleibercoelho.github.io/codeleapPage/" target="_blank"><FaCode /><p>acessar site</p></Link></div></div>),
+      secretText: `${t("projects.codeleap")}`,
+      secretTextAcess: (<div className="AcessDois"><div><Link to="/projects/5"><FaMagnifyingGlassPlus /> <p> {t("projects.buttonDetails")}</p></Link></div> <div><Link to="https://github.com/gleibercoelho/codeLeap" target="_blank"><FaGithub /><p>GitHub</p></Link></div><div><Link to="https://gleibercoelho.github.io/codeleapPage/" target="_blank"><FaCode /><p>{t("projects.buttonAcess")}</p></Link></div></div>),
       imageSrcSecretOne: Codeleap,
       imageSrcSecretTwo: CodeleapTwo,
       imageSrcSecretThree: CodeleapThree,
@@ -380,7 +381,7 @@ const Projects = () => {
 
   return (
     <ProjectsBox >
-      <h1>Projetos em destaque</h1>
+      <h1>{t("projects.title")}</h1>
       <div>
         {projectData.map((project, index) => (
           <Reveal>
@@ -394,7 +395,7 @@ const Projects = () => {
                   <div className="textDiv" style={{ display: "flex" }}>
                     <h2>{project.title}</h2>
                     <p>techs: {project.technologies}</p>
-                    <button className="button" onClick={(event) => handleClick(event, project.id)}>Saiba +</button>
+                    <button className="button" onClick={(event) => handleClick(event, project.id)}>{t("projects.buttonOpen")}</button>
                   </div>
                 </>
               ) : (
@@ -402,7 +403,7 @@ const Projects = () => {
                   <div className="textDiv" style={{ display: "flex" }}>
                     <h2>{project.title}</h2>
                     <p>techs:{project.technologies}</p>
-                    <button className="button" onClick={(event) => handleClick(event, project.id)}>Saiba +</button>
+                    <button className="button" onClick={(event) => handleClick(event, project.id)}>{t("projects.buttonOpen")}</button>
                   </div>
                   <div className="card" style={{ display: "flex" }}>
                     <img className={project.imageClass} src={project.imageSrc} alt="" />
@@ -415,7 +416,7 @@ const Projects = () => {
                 <div className="secretDivRow">
                   <button className="saibaMais" onClick={(event) => {
                     handleClick(event, project.id); /* setLeftDivClass(`oriented-Div-animated ${index}`);
-        setRightDivClass(`oriented-Div-animated ${index}`) */}}>Fechar -</button>
+        setRightDivClass(`oriented-Div-animated ${index}`) */}}>{t("projects.buttonClose")}</button>
                   <div className="secretDivColumn">
                     <p>{project.secretText}</p>
                     <div className="Acess">{project.secretTextAcess}
@@ -438,7 +439,7 @@ const Projects = () => {
       </div>
       <div className="footer">
 
-        <Link to="/projects"><h2 >Ver todos os projetos</h2></Link>
+        <Link to="/projects"><h2 >{t("projects.footer")}</h2></Link>
       </div>
     </ProjectsBox>
   )

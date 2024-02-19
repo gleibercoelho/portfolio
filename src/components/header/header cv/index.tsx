@@ -4,11 +4,14 @@ import { FaHome } from 'react-icons/fa';
 import { HeaderBoxCV } from './style';
 import { HiDocumentDownload } from 'react-icons/hi';
 import { Link } from 'react-router-dom';
+import { useTranslation } from "react-i18next";
+
 
 
 
 
 const HeaderCV = () => {  
+  const [t] = useTranslation("global");
   const [isOpen, setIsOpen] = useState(false);
   const [showActive, setShowActive] = useState(false);
   const [showNewActive, setShowNewActive] = useState(false);
@@ -78,25 +81,26 @@ const HeaderCV = () => {
             <li><Link to="/projects"
             onClick={() => handleLinkClick('/projects')}>
               <FiChevronsRight color="black" />
-              Projetos
+              {t("header.project")}
               </Link>
             </li>
             <li><Link to="/about"
             onClick={() => handleLinkClick('/about')}>
               <FiChevronsRight color="black" />
-              Sobre
+              {t("header.about")}
               </Link>
             </li>
             <li><Link to="/contact"
             onClick={() => handleLinkClick('/contact')}>
-              <FiChevronsRight color="black" /> Contato
+              <FiChevronsRight color="black" /> 
+              {t("header.contact")}
               </Link>
             </li>
           </ul>
         </div>
       )}
     
-        <a href="https://github.com/gleibercoelho/portfolio/files/13867780/Gleiber.Coelho.CV.pdf" target="_blank" download><HiDocumentDownload className="CV" /><p> Baixar CV</p></a>  
+        <a href="https://github.com/gleibercoelho/portfolio/files/13867780/Gleiber.Coelho.CV.pdf" target="_blank" download><HiDocumentDownload className="CV" /><p> {t("about.cv")}</p></a>  
     </HeaderBoxCV>
   );
 };

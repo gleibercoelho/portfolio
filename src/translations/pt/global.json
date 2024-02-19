@@ -1,0 +1,159 @@
+{
+    "header": {
+        "project": "Projetos",
+        "about": "Sobre",
+        "contact": "Contato"
+    },
+    "home": {
+        "body": "Front End Desenvolvedor"
+    },
+    "projects": {
+        "title": "Projetos em destaque",
+        "footer": "ver mais",
+        "barber": "Barber Shop é um site desenvolvido para que clientes possam marcar um horário na sua barbearia preferida do seu próprio celular.",
+        "agency": "Este projeto é site densenvolvido em Next Js para uma agência de mmarketing que possue seu próprio blog.",
+        "gadgets": "Comercio Gadgets é um projeto Full-Stack no qual eu desenvolvi o Fron end. Este é um e-commerce com experiência completa.",
+        "ggwp": "GG-WP é uma aplicação web Full-Stack que busca os status de partida dos jogadores de league of legends do mundo inteiro.",
+        "soungg": "Sound Garden é um site desenvolvido para uma grande empresa de eventos que mostra os pricipais shows que estão por vir.",
+        "codeleap": "Codeleap é um serviço de microblog para publicar todas as suas ideias e pensamentos para o mundo",
+        "buttonClose": "Fechar -",
+        "buttonDetails": "mais detalhes",
+        "buttonAcess": "acessar site",
+        "buttonOpen": "Saiba +"
+    },
+    "skills": {
+        "title": "Estilização",
+        "footer": "* aprendendo atualmente."
+    },
+    "Contact": {
+        "title": "Contato",
+        "message": "Mande uma mensagem:",
+        "name": "Nome",
+        "message2": "Mensagem",
+        "send": "Enviar",
+        "email": "Me mande um email",
+        "zapzap": "Me mande um whatsapp",
+        "linkedin": "Se conecte comigo no",
+        "github": "Conheça e/ou me siga no",
+        "live": "Onde eu moro? Santa Luzia, MG.",
+        "emailC": "Email copiado!.",
+        "zapzapC": "Whatsapp copiado!",
+        "linkedinC": "Link do LinkedIn copiado!",
+        "githubC": "Link do GitHub copiado!"
+    },
+    "about": {
+        "saudation": "olá,",
+        "iam": "eu sou o Gleiber.",
+        "body": "Eu sou desenvolvedor front-end júnior em transição de carreira. Sou apaixonado com desenvolvimento de sites e estilização. Estudo programação desde o início de 2022 e estou em busca da minha primeira oportunidade formal na área. Tenho experiencia tanto em front-end, quando em back-end, que estão evidenciados nos projetos que eu criei; Neste portifólio estão disponíveis alguns dos sites e aplicações que eu criei de forma independente e/ou em cursos e vídeo aulas. vamos trabalhar juntos?",
+        "bodySpan": "Estou aberto a propostas freelance.",
+        "name": "Nome:",
+        "tech": "Linguaguem:",
+        "formation": "Formação:",
+        "formation2": "Cursando Análise e Desenvolvimento De Sistemas",
+        "especialization": "Especialização:",
+        "cv": "Baixar CV"
+    },
+    "showcase": {
+        "title": "Projetos"
+    },
+    "details": {
+        "project0": {
+            "text1": "Esta é uma aplicação web desenvolvida com Next JS e Postgre.",
+            "text2": "Esta é uma aplicação para que clientes possam agendar um horário em sua barbearia preferida pelo celular.",
+            "text3": "Esta aplicação serve como um catálogo de barbearias para que clientes encontrem diversos serviços e agendem um horario em dos estabelecimentos.",
+            "text4": "Uma barbearia pode oferecer diversos serviços, como corte de cabelo, barba, sombrancelha, entre outros. Os clientes podem agendar diretamente um serviço na aplicação que pode ajudar o dono do estabelecimento a se programar parar oferecer este serviço.",
+            "text5": "Todos os serviços sao registrados no banco de dados utlizando o Prisma e Postgre. A autenticação na aplicação e feita com Google e OAuth que oferecem seguranca na autencicação."
+        },
+        "project1": {
+            "text1": "Este é um site desenvolvido com Next Js e React JS.",
+            "text2": "Este site foi desenvolvido para uma agência de marketing que possue seu próprio blog e possível saber novidades sobre a empresa e sobre os suas últimas criações.",
+            "text3": "Este site foi desenvolvido com Next Js que otimiza a renderização do site e das imagens para o cliente, para dispositivos low-end e para situações de baixa qualidade de internet.",
+            "text4": "A tecnologia do Next js possibilita uma pre-renderização dos componentes do site, pois faz uma redenrização primeiro no server side, diminuindo o trabalho que os navegadores tem para exibir a página para usuário final.",
+            "text5": "Os post do blog são unicos e foram adicionados usando API que mocka, ou seja, cria os elementos para que possam ser alimentados e gerados na página."
+        },
+        "project2": {
+            "text1": "Este é um projeto ecommerce desenvolvido com React. Inspirado no design da Apple.",
+            "text2": "Este é um projeto de Ecommerce Full Stack no qual eu sou responsável pelo desenvolvimento do front end e integração com o back end. O site oferece toda a experiencia de compra para um usuário.",
+            "text3": "Dentro do site é possível se cadastrar como usuário, ver seu histórico de compras, adicionar e remover produtos do seu carinho, fechar pedidos, adicionar cupons de desconto. Este site foi desenvolvido em React. Eu configurei toda integração do CRUD com o back end.",
+            "text4": "Este site foi desenvolvido como trabalho de conclusão do meu curso de programação com ênfase em front end na Gama Academy. Para conhecer como foi o processo de desenvolvimento, consulte meu repositório.",
+            "text5": "O site também conta com painel de controle para o administrador verificar todos os produtos cadastrados, classes de produtos, usuários cadastrados, pedidos feitos. O painel foi desenvolvido para o usuário administrador realizar toda gestão do site sem precisar programar."
+        },
+        "project3": {
+            "text1": "Esta é uma aplicação web desenvolvida em React. Criada para jogadores do game League of Legends.",
+            "text2": "Essa aplicação foi desenvolvida para mostrar os status das partidas de qualquer jogador de Lol em qualquer servidor do mundo. Basta digitar um nome de usuário válido para acessar os dados do jogador.",
+            "text3": "Dentro do site é possível gráficos de dano, quantidade de kills, e receber insight exclusivos com base na análise dos dados disponíveis.",
+            "text4": "A criação desse site foi possível graças as API da Riot Games produtora do League of Legends. Nesta API sao disponibilizadas uma quantidade absurda de informação. É necessário bastante conhecimento prévio do jogo para conseguir organizar estes dados e trazer análises para os usuários.",
+            "text5": "Para ser elegível a uma das chaves da Riot Games que possibilita a consulta de dados das APIs em grande escala é necessário colocar camadas de proteção desta chave token de acesso. Para isso ser possível foi necessário criar um servidor intermediário no back end para receber as requisições do navegador e enviar para o servidor da Riot e retornar apenas os dados solicitados pelo usuário."
+        },
+        "project4": {
+            "text1": "Sound Garden é uma grande empresa de eventos que promove shows e festivais pelo país.",
+            "text2": "Este é um site desenvolvido com HTML e Javascript para que os usuários possam entrar para consultar os proximos eventos e realizar a reserva do seu ingresso bem como a compra do mesmo.",
+            "text3": "O design do front end foi criado inspirados em sites do mesmo segmento.",
+            "text4": "O administrador também pode consultar, editar, remover ou adicionar reservas que os demais usuário fizeram para cada evento.",
+            "text5": "O back end desse site foi fornecido pela Gama Academy durante meu curso de front end e infelizmente nao esta mais disponível; imposibilitando visualizar todas as propriedades do site."
+        },
+        "project5": {
+            "text1": "Esta é uma aplicação web criada em React para se compartilhar ideias.",
+            "text2": "Codeleap é um micro blog no qual e possivel logar com seu usuário e compartilhar suas ideias com o resto do mundo. Voce pode escrever sobre qualquer assunto e publicar neste site. Que tal começar agora?",
+            "text3": "Este projeto faz parte de um desafio de código técnico para uma vaga de front end na Codeleap. O desafio é criar o código de um blog disponibilizado a partir do Figma.",
+            "text4": "A criação, edição e remoção dos posts do blog é feita através da API disponibilizada para esse desafio. Este foi meu primeiro projeto desenvolvido usando session storage. Eu pude aprender como enviar informações armazenadas na session para o Redux, uma vez que ele perde as informações da store quando a página é recarregada.",
+            "text5": "A session storage e o Redux foram combinados porque esse site foi imaginado para acessos recorrentes ao longo do dia. Dessa forma é possível o usuário continuar logado e voltar a página que estava lendo sem precisar relogar."
+        },
+        "project6": {
+            "text1": "Dindin é um site de educação financeira onde você aprende a investir.",
+            "text2": "Este site foi criado para que os usuários possam ler artigos sobre economia e finanças e também assistir a vídeo aulas de como aplicar seu dinheiro de forma segura e duradoura. Venha assistir uma aula e planejar seu futuro.",
+            "text3": "Este projeto foi o primeiro criado por mim no curso de fron end da Gama Academy. Desenvolvido com HTML, CSS e Javascript.",
+            "text4": "Com este site aprendi conceitos iniciais de flexbox e grid.",
+            "text5": "Que tal aprender sobre educação financeira?"
+        },
+        "project7": {
+            "text1": "Este é o lugar para os fãs encontrarem conteúdo exclusivo da sua criadora de conteúdo gamer preferida.",
+            "text2": "Este site foi criado para criadora de conteúdo de jogos Sheilla Pompom possa compartilhar o conteudo das suas lives, youtube e demais redes com seus fãs. Sheilla é uma Drag Queen.",
+            "text3": "Este é um site colorido para um público colorido por uma criadora colorida.",
+            "text4": "Através do site os fãs podem acompanhar o último conteúdo lançado. Desenvolvido em HTML e Javascript.",
+            "text5": "Quer saber da próxima live ou rever a última? Vem pra cá."
+        },
+        "project8": {
+            "text1": "Site criado inspirado na marca de cafés brasileiro 3 Corações.",
+            "text2": "Site criado em HTML com Javascript para uma marca de cafés onde é possível ver seus produtos, avaliações, encontrar lojas físicas e entrar em contato com o atendimento ao cliente. O design é inspirado em sites de cafeteria.",
+            "text3": "Este projeto front end foi imaginado para fornecer uma experiencia para os consumidores encontrarem não só café, mas outros produtos que a marca oferece.",
+            "text4": "No site também é possível comprar os produtos disponives e colocar no seu carinho. Veja os produtos mais bem avaliados para ajudar na sua decisão.",
+            "text5": "Conheça e aprenda a fazer as últimas receitas mais deliciosas no nosso blog."
+        },
+        "project9": {
+            "text1": "Este projeto recria a home page do maior site de streaming do mundo.",
+            "text2": "Este projeto foi desenvolvido utilizando o Bootstrap, a biblioteca do Javascript para criar o carrossel de imagens que simula os filmes disponíveis no catálogo do site.",
+            "text3": "O bootstrap fornece diversos blocos de código predefinidos para que programadores possam reaproveitar esses blocos prontos e incorporarem aos seus projetos.",
+            "text4": "Outra vantagem que usar bootstrap no projeto é a sua responsividade. O código já é construído para os diferentes tamanhos de tela.",
+            "text5": "Este tipo de biblioteca e amplamente usado por programadores para acelerar o processo de criação."
+        },
+        "project10": {
+            "text1": "Encontre todos os seus pokémons preferidos da primeira geração do clássico anime japonês.",
+            "text2": "Este e o projeto de um catálogo de pokémons inspirado em uma agenda eletrônica do anime onde é possível consultar informações de todos os monstros criados que você encontrar pelo caminho.",
+            "text3": "Este projeto consome dados de uma API usando Javascript para trazer as informações dos monstrinhos direito para o site.",
+            "text4": "Projeto curinga no portifólio de todo programador iniciante, a pokedex é um otimo desafio para começar no Javascript e consumir dados de APIs.",
+            "text5": "Conheça todos os monstros da primeira temporada do anime."
+        },
+        "project11": {
+            "text1": "Este é um projeto front end de uma oficina desenvolvido em React.",
+            "text2": "Este foi meu primeiro projeto desenvolvido com React e Typescript. Neste projeto foi desenvolvido a simulação de sistema de uma loja de peças que monitora as vendas feitas e o estoque de peças. o login foi implementado com Redux.",
+            "text3": "O foco do projeto é desenvolver o front end, então para o back end eu criei um mock up do estoque e das vendas.",
+            "text4": "O sistema de login foi implementado com Redux para que o estado de login do usuário esteja disponível em todo o site.",
+            "text5": "Este site pode atender facilmente uma pequena loja e realizar seus controles de vendas e estoque."
+        },
+        "project12": {
+            "text1": "Site de culinária para você preparar as melhores receitas.",
+            "text2": "Este site foi desenvolvido no meu curso de front end na Gama Academy. Consiste em disponibilizar um site com receitas para que os usuários possam consultar ingredientes, instruções e vídeos para realizar o preparo da receita escolhida.",
+            "text3": "Omma é um site de receitas onde você pode consultar as melhores opções do que servir naquele almoço especial de domingo. Escolha dentre os melhores doces até os melhores pratos.",
+            "text4": "Omma foi desenvolvido com HTML e CSS.",
+            "text5": "Conheça e aprenda a fazer as últimas receitas mais deliciosas no nosso site."
+        },
+        "project13": {
+            "text1": "La Vie é um projeto de back end para um clínica médica desenvolvida com Node Js.",
+            "text2": "Neste projeto os usuários são psicólogos da clinica La vie que entram no sistema desenvolvido para criar o cadastro dos pacientes e o registro das consultar para registrar os seus respectivos prontuários médicos.",
+            "text3": "O servidor foi desenvolvido com autenticação de token JWT de modo o registro do médico seja registrado.",
+            "text4": "O mesmo paciente pode ter vários prontuários de atendimento no qual são registrados os médicos que fizeram seu atendimento.",
+            "text5": "O sistema foi criado com um administrador que pode criar cadastro de novos psicólogos com seu login e senha."
+        }      
+}
+}

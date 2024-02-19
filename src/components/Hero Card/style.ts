@@ -215,7 +215,8 @@ export const MainCardBox = styled.div`
             font-size: 35px !important; 
             left: 0px;
             line-height: 50px !important;
-            width: 380px !important;
+            width: 300px !important;
+            white-space: wrap;
             top: 80px !important;
             
             }          

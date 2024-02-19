@@ -9,6 +9,7 @@ import { GrMysql } from "react-icons/gr";
 import { RiSupabaseLine } from "react-icons/ri";
 import { ProjectDetailBox } from './style';
 import { Link } from 'react-router-dom';
+import { useTranslation } from "react-i18next";
 import CafeHero from "../../assets/cafe/FireShot Capture 030 - Café 3 Corações - .png"
 import CafeBody from "../../assets/cafe/FireShot Capture 029 - Café 3 Corações - .png"
 import cafeCa1 from "../../assets/cafe/FireShot Capture 031 - Café 3 Corações - .png"
@@ -125,7 +126,7 @@ export const product: ProductDetailsProps['product'][] =
       heroPhoto: BarbershopHero,
       heroPhotoClass: 'classeHerophoto0',
       title: 'Barber Shop',
-      subText: 'Esta é uma aplicação web desenvolvida com Next JS e Postgres.',
+      subText: "t(details.project0.text1)",
       subText2: 'Esta é uma aplicação para que clientes possam agendar um horário em sua barbearia preferida pelo celular.',
       infoEnd: 'https://barbershop-virid.vercel.app/',
       infoRepo: 'https://github.com/gleibercoelho/barbershop',

@@ -13,6 +13,10 @@ export const HeaderBox = styled.div<YourComponentProps>`
   color: #9296F0;
   font-family: 'Poppins', sans-serif;
 
+  .testingdiv{
+    display: flex;
+    flex-direction: row;
+  }
   h1{
     font-size: 30px;
     padding-left: 20px;
@@ -139,7 +143,7 @@ export const HeaderBox = styled.div<YourComponentProps>`
       font-size: 15px;
     }
     h2{
-      font-size: 15px;
+      display: none;
     }
     .menu-icon {
       svg{

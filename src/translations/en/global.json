@@ -1,0 +1,159 @@
+{
+    "header": {
+        "project": "Projects",
+        "about": "About",
+        "contact": "Contact"
+    },
+    "home": {
+        "body": "Front End Developer"
+    },
+    "projects": {
+        "title": "Featured projects",
+        "footer": "See more projects",
+        "barber": "Barber Shop is a website designed so that customers can book an appointment at their favorite barbershop from their own cell phone.",
+        "agency": "This project is a website developed in Next Js for a marketing agency that has its own blog.",
+        "gadgets": "Comercio Gadgets is a Full-Stack project in which I developed the Front end. This is an e-commerce with a complete experience.",
+        "ggwp": "GG-WP is a Full-Stack Web Application that searches the match status of League of Legends players around the world.",
+        "soungg": "Sound Garden is a website developed for a large events company that shows the main upcoming shows.",
+        "codeleap": "Codeleap is a microblogging service to publish all your ideas and thoughts with the world",
+        "buttonClose": "Close -",
+        "buttonDetails": "more details",
+        "buttonAcess": "acess website",
+        "buttonOpen": "More +"
+    },
+    "skills": {
+        "title": "Stylization",
+        "footer": "* currently learning"
+    },
+    "Contact": {
+        "title": "Contact",
+        "message": "Send a message:",
+        "name": "Name",
+        "message2": "Message",
+        "send": "Send",
+        "email": "Send me a email",
+        "zapzap": "Send me a whastapp",
+        "linkedin": "Connect with me on",
+        "github": "Know and/or follow me on",
+        "live": "Where do I live? Santa Luzia, Brazil.",
+        "emailC": "Email copied!.",
+        "zapzapC": "Whatsapp copied!",
+        "linkedinC": "LinkedIn copied!",
+        "githubC": "GitHub copied!"
+    },
+    "about": {
+        "saudation": "Hi,",
+        "iam": "I am",
+        "body": "I'm a junior front-end developer in a career transition. I'm passionate about website development and styling. Study schedule since the beginning of 2022 and I am looking for my first formal opportunity in the area. I have experience in both front-end and back-end, which is evident in the projects I created; In this portfolio there are some websites and applications that I create independently and/or in courses and video classes. Let's work together?",
+        "bodySpan": "I am open to freelance proposals.",
+        "name": "Name:",
+        "tech": "Language:",
+        "formation": "Academic:",
+        "formation2": "Studying Systems Analysis and Development",
+        "especialization": "Specialization:",
+        "cv": "download resume"
+    },
+    "showcase": {
+        "title": "Projects"
+    },
+    "details": {
+        "project0": {
+            "text1": "This is a web application developed with Next JS and Postgre.",
+            "text2": "This is an application where customers can schedule an appointment at their favorite barbershop using their cell phone.",
+            "text3": "This application work as a barbershop catalog so that customers can find different services and schedule an appointment at the establishments.",
+            "text4": "A barbershop can offer various services, such as haircuts, beards, eyebrows, among others. Customers can directly schedule a service in the application, which can help the establishment owner plan to offer this service.",
+            "text5": "All services are registered in the database using Prisma and Postgre. Authentication in the application is done with Google and OAuth, which offer authentication security."
+        },
+        "project1": {
+            "text1": "This is a website developed with Next Js and React JS",
+            "text2": "This website was developed for a marketing agency that has its own blog and allows you to find out about the company and its latest creations.",
+            "text3": "This website was developed with Next Js which optimizes the rendering of the website and images for the client, for low-end devices and for low internet quality situations.",
+            "text4": "Next js technology enables pre-rendering of the website's components, as it performs a rendering first on the server side, reducing the work that browsers have to do to display the page to the end user.",
+            "text5": "The blog posts are unique and were added using an API that mocks, in other words, creates the elements so that they can be fed and generated on the page."
+        },
+        "project2": {
+            "text1": "This is an ecommerce project developed with React. Inspired by Apple design.",
+            "text2": "This is a Full Stack Ecommerce project which I am responsible for developing the front end and integration with the back end. The website offers the entire shopping experience to an user.",
+            "text3": "Within the website it is possible to register as a user, view your purchase history, add and remove products you like, close orders, add discount coupons. This website was developed in React. I configured all CRUD integration with the back end.",
+            "text4": "This website was developed as a final work for my programming course with an emphasis on front end at Gama Academy. To learn more about the development process, check out my repository.            ",
+            "text5": "The website also has a control panel for the administrator to check all registered products, product classes, registered users, orders placed. The panel was developed for the administrator user to manage the entire website without having to program."
+        },
+        "project3": {
+            "text1": "This is a web application developed in React. Created for players of the game League of Legends.",
+            "text2": "This application was developed to show the match status of any Lol player on any server in the world. Simply enter a valid username to access player data.",
+            "text3": "Within the website it is possible to graph damage, number of kills, and receive exclusive insights based on the analysis of available data",
+            "text4": "The creation of this website was possible thanks to the Riot Games API, producer of League of Legends. This API provides an absurd amount of information. It is necessary to have a lot of prior knowledge of the game to be able to organize this data and bring analyzes to users.",
+            "text5": "To be eligible for one of the Riot Games keys that allows large-scale API data querying, it is necessary to layer protection on this access token key. For this to be possible, it was necessary to create an intermediate server in the back end to receive requests from the browser and send them to the Riot server and return only the data requested by the user."
+        },
+        "project4": {
+            "text1": "Sound Garden is a large events company that promotes shows and festivals across the country.",
+            "text2": "This is a website developed with HTML and Javascript so that users can enter to check upcoming events and book their tickets as well as purchase them.",
+            "text3": "The front end design was created inspired by websites in the same segment.",
+            "text4": "The administrator can also consult, edit, remove or add reservations that other users have made for each event.",
+            "text5": "The back end of this site was provided by Gama Academy during my front end course and unfortunately it is no longer available; making it impossible to view all site properties."
+        },
+        "project5": {
+            "text1": "This is a web application created in React to share ideas.",
+            "text2": "Codeleap is a micro blog where you can log in with your user and share your ideas with the rest of the world. You can write about any topic and publish on this site. How about starting now?",
+            "text3": "This project is part of a technical code challenge for a front end position at Codeleap. The challenge is to create the code for a blog made available from Figma",
+            "text4": "The creation, editing and removal of blog posts is done through the API made available for this challenge. This was my first project developed using session storage. I was able to learn how to send information stored in the session to Redux, since it loses the store information when the page is reloaded.",
+            "text5": "Session storage and Redux were combined because this site was designed for recurring access throughout the day. This way, the user can remain logged in and return to the page they were reading without having to relog."
+        },
+        "project6": {
+            "text1": "Dindin is a financial education website where you learn how to invest.",
+            "text2": "This website was created so that users can read articles about economics and finance and also watch video lessons on how to invest their money in a safe and lasting way. Come take a class and plan your future.",
+            "text3": "This project was the first created by me in the front end course at Gama Academy. Developed with HTML, CSS and Javascript",
+            "text4": "With this site I learned initial concepts of flexbox and grid.",
+            "text5": "How about learning about financial education?"
+        },
+        "project7": {
+            "text1": "This is the place for fans to find exclusive content from their favorite gaming content creator.",
+            "text2": "This website was created so that game content creator Sheilla Pompom can share content from her lives, YouTube and other networks with her fans. Sheilla is a Drag Queen.",
+            "text3": "This is a colorful site for a colorful audience by a colorful creator.",
+            "text4": "Through the website, fans can follow the latest content released. Developed in HTML and Javascript.",
+            "text5": "Want to know about the next live or watch again the last one? Come together."
+        },
+        "project8": {
+            "text1": "Website created inspired by the Brazilian coffee brand 3 Corações.",
+            "text2": "Website created in HTML with Javascript for a coffee brand where it is possible to see their products, reviews, find physical stores and contact customer service. The design is inspired by coffee shop websites.",
+            "text3": "This front end project was designed to provide an experience for consumers to find not only coffee, but other products that the brand offers.",
+            "text4": "On the website you can also buy available products and place them in your care. See the best-rated products to help with your decision.",
+            "text5": "Discover and learn how to make the latest most delicious recipes on our blog."
+        },
+        "project9": {
+            "text1": "This project recreates the home page of the largest streaming site in the world.",
+            "text2": "This project was developed using Bootstrap, the Javascript library to create the image carousel that simulates the films available in the website's catalog.            ",
+            "text3": "Bootstrap provides several predefined code blocks so that programmers can reuse these ready-made blocks and incorporate them into their projects.",
+            "text4": "Another advantage of using bootstrap in your project is its responsiveness. The code is already built for different screen sizes.",
+            "text5": "This type of library is widely used by programmers to speed up the creation process."
+        },
+        "project10": {
+            "text1": "Find all your favorite Pokémon from the first generation of the classic Japanese anime.",
+            "text2": "This is the project of a Pokémon catalog inspired by an electronic diary from the anime where you can consult information on all the created monsters you encounter along the way.",
+            "text3": "This project consumes data from an API using Javascript to bring the monsters' information directly to the website.",
+            "text4": "A wildcard project in every beginner programmer's portfolio, pokedex is a great challenge to start with Javascript and consume data from APIs.",
+            "text5": "Meet all the monsters from the first season of the anime."
+        },
+        "project11": {
+            "text1": "This is a front end project for a workshop developed in React.",
+            "text2": "This was my first project developed with React and Typescript. In this project, a system simulation of a parts store was developed that monitors sales made and parts stock. login was implemented with Redux.",
+            "text3": "The focus of the project is to develop the front end, so for the back end I created a mock up of inventory and sales.",
+            "text4": "The login system was implemented with Redux so that the user's login state is available across the entire site.",
+            "text5": "This website can easily serve a small store and carry out sales and inventory controls."
+        },
+        "project12": {
+            "text1": "Cooking website for you to prepare the best recipes.",
+            "text2": "This website was developed during my front end course at Gama Academy. It consists of providing a website with recipes so that users can consult ingredients, instructions and videos to prepare the chosen recipe.",
+            "text3": "Omma is a recipe website where you can consult the best options for what to serve for that special Sunday lunch. Choose from the best sweets to the best dishes.",
+            "text4": "Omma was developed with HTML and CSS.",
+            "text5": "Discover and learn how to make the latest, most delicious recipes on our website."
+        },
+        "project13": {
+            "text1": "La Vie is a back end project for a medical clinic developed with Node Js.",
+            "text2": "In this project, users are psychologists from the La Vie clinic who enter the system developed to create a patient registry and a record of consultations to record their respective medical records.",
+            "text3": "The server is designed with JWT token authentication so that the doctor's record is recorded.",
+            "text4": "The same patient may have several care records in which the doctors who provided care are recorded.",
+            "text5": "The system was created with an administrator who can create a register for new psychologists with their login and password."
+        }      
+}
+}
